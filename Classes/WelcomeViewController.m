@@ -99,30 +99,9 @@
         return YES;
 }
 
--(void)releaseScreen:(int)screen
-{
-    switch (screen) {
-        case welcome1Screen:
-            self.welcome1;
-            break;
-        case welcome2EnterNameScreen:
-            self.welcome2;
-            break;
-            
-        case welcome3EnableFacebookScreen:
-           self.welcome3;
-            break;
-        case redirectingToFacebook:
-            self.redirectScreen;
-            break;
-        default:
-            break;
-    }
-}
 
 -(void) showNextScreen:(int)screen FromCurrentScreen:(int)currentScreen
 {
-    [self releaseScreen:currentScreen];
     
     ViewHelper *vh = [ViewHelper sharedManager];
     UserModel *userModel = [UserModel userModel];

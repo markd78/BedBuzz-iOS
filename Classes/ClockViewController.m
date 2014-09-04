@@ -224,11 +224,9 @@
     if (userModel.userSettings.showTitleBar)
     {
         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-        [self setWantsFullScreenLayout:NO];
     }
     else {
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-        [self setWantsFullScreenLayout:YES];
         // self.navigationController.navigationBar.frame = CGRectOffset(self.//navigationController.navigationBar.frame, 0.0, -20.0);
         
         self.view.frame = [[UIScreen mainScreen] bounds];
@@ -671,23 +669,9 @@
     
 }
 
--(void)releaseScreen:(int)screen
-{
-    switch (screen) {
-        case welcome3EnableFacebookScreen:
-            self.welcome3;
-            break;
-        case redirectingToFacebook:
-            self.redirectScreen;
-            break;
-        default:
-            break;
-    }
-}
 
 -(void)showNextScreen:(int)screen FromCurrentScreen:(int)currentScreen
 {
-    [self releaseScreen:screen];
     
     ViewHelper *vh = [ViewHelper sharedManager];
     
@@ -1005,11 +989,9 @@
     if (userModel.userSettings.showTitleBar)
     {
         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-        [self setWantsFullScreenLayout:NO];
     }
     else {
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-        [self setWantsFullScreenLayout:YES];
     }
     
     
@@ -1091,7 +1073,7 @@
 
 -(void)alarmFinished
 {
-    [alarmGoingOffViewController dismissModalViewControllerAnimated:YES];
+    [alarmGoingOffViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)alarmIsGoingOff {
@@ -1171,10 +1153,10 @@
 	NSString *minStr;
 	if (minute < 10)
 	{
-		minStr =  [NSString stringWithFormat:@"0%d",minute];
+		minStr =  [NSString stringWithFormat:@"0%ld",(long)minute];
 	}
 	else {
-		minStr =  [NSString stringWithFormat:@"%d",minute];
+		minStr =  [NSString stringWithFormat:@"%ld",(long)minute];
 	}
     
    
@@ -1194,7 +1176,7 @@
 		}
 	}
     
-	NSString *timeStr = [NSString stringWithFormat:@"%d:%@", hour, minStr];
+	NSString *timeStr = [NSString stringWithFormat:@"%ld:%@", (long)hour, minStr];
 	
 	// This sets the label with the updated time.
 	[clockLabel setText:timeStr];

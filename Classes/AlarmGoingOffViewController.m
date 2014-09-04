@@ -265,10 +265,6 @@
         [rssModel.rssClips removeAllObjects];
        // [rssModel.rssFeeds removeAllObjects];
         
-        if (rssModel.webviewDict!=nil)
-        {
-            rssModel.webviewDict;
-        }
         
         // this is to refresh the weather (sunrise might have happened since the alarm initially sounded)
         

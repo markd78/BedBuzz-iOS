@@ -72,9 +72,9 @@
 	label3.backgroundColor = [UIColor clearColor];
 	label3.font = [UIFont systemFontOfSize:15];
 	label3.shadowColor = [UIColor darkGrayColor];
-	label3.textAlignment = UITextAlignmentLeft;
+	label3.textAlignment = NSTextAlignmentLeft;
 	label3.textColor = [UIColor blackColor];
-	label3.lineBreakMode = UILineBreakModeWordWrap;
+	label3.lineBreakMode = NSLineBreakByWordWrapping;
 	label3.numberOfLines = 9;
 	label3.text = footerString;
 	self.tableView.tableFooterView = label3;
@@ -265,7 +265,7 @@
             }
 			cell.textLabel.text = @"Add Alarm...";
 			cell.textLabel.textColor = [UIColor blueColor];	
-            cell.textLabel.textAlignment = UITextAlignmentLeft;
+            cell.textLabel.textAlignment = NSTextAlignmentLeft;
             return cell;
 		}
 
@@ -453,8 +453,8 @@
     
 	AlarmsModel *sharedManager = [AlarmsModel sharedManager];
 	
-	NSLog(@"Index Path Section=%i",indexPath.section);
-	NSLog(@"Index Path Row=%i",indexPath.row);
+	NSLog(@"Index Path Section=%li",(long)indexPath.section);
+	NSLog(@"Index Path Row=%li",(long)indexPath.row);
 	if (indexPath.section == 0)
 	{
 		AlarmDetailTableController *detailViewController;

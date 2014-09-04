@@ -133,10 +133,10 @@
 		//add the theme to the list
 		ThemesModel *themesModel = [ThemesModel sharedInstance];
 		
-		int numberOfCustomThemes = [themesModel.userThemes count]+1;
+		NSInteger numberOfCustomThemes = [themesModel.userThemes count]+1;
 		
 		Theme *theme1 = [[Theme alloc] init];
-		theme1.themeName = [NSString stringWithFormat:@"User Added %i",numberOfCustomThemes ];
+		theme1.themeName = [NSString stringWithFormat:@"User Added %li",(long)numberOfCustomThemes ];
 		theme1.imageDescription = @"";
 		theme1.imageName=fileNameOfImage;
 		theme1.thumbnailImage = fileNameOfThumbImage;
@@ -281,7 +281,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
 	ThemesModel *themesModel = [ThemesModel sharedInstance];
-	int numberOfThemes = [themesModel.themes count];
+	NSInteger numberOfThemes = [themesModel.themes count];
     return numberOfThemes;
 }
 
@@ -374,8 +374,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    
-	int newRow = [indexPath row];
-	int oldRow = [lastIndexPath row];
+	NSInteger newRow = [indexPath row];
+	NSInteger oldRow = [lastIndexPath row];
 	
 	if (lastIndexPath == nil)
 	{

@@ -66,8 +66,8 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     
     // Use when fetching text data
-    NSString *responseString = [[NSString alloc] initWithData:_responseData
-                                                     encoding:NSASCIIStringEncoding];
+   // NSString *responseString = [[NSString alloc] initWithData:_responseData
+    //                                                 encoding:NSASCIIStringEncoding];
     
 }
 

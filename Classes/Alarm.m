@@ -27,8 +27,8 @@
 {
     [coder encodeObject:alarmName forKey:@"alarmName"];
 	[coder encodeObject:alarmMusic forKey:@"alarmMusic"];
-	[coder encodeInt:hour forKey:@"hour"];
-	[coder encodeInt:mins forKey:@"mins"];
+	[coder encodeInteger:hour forKey:@"hour"];
+	[coder encodeInteger:mins forKey:@"mins"];
 	[coder encodeBool:sunday forKey:@"sunday"];
 	[coder encodeBool:monday forKey:@"monday"];
 	[coder encodeBool:tuesday forKey:@"tuesday"];
@@ -77,10 +77,10 @@
 	NSString *minStr;
 	if (self.mins < 10)
 	{
-		minStr =  [NSString stringWithFormat:@"0%d",self.mins];
+		minStr =  [NSString stringWithFormat:@"0%ld",(long)self.mins];
 	}
 	else {
-		minStr =  [NSString stringWithFormat:@"%d",self.mins];
+		minStr =  [NSString stringWithFormat:@"%ld",(long)self.mins];
 	}
     
     NSString *amPMStr;
@@ -93,7 +93,7 @@
          amPMStr = @"pm";
     }
     
-    int hourForStr = hour;
+    NSInteger hourForStr = hour;
 	// if amPMStr is empty, it means they have 24 hour mode on the iphone
 	if ([amPMStr length] > 0)
 	{
@@ -104,7 +104,7 @@
 	}
 	
     
-	NSString *timeStr = [NSString stringWithFormat:@"%d:%@ %@", hourForStr, minStr,amPMStr];
+	NSString *timeStr = [NSString stringWithFormat:@"%ld:%@ %@", (long)hourForStr, minStr,amPMStr];
     
     
     

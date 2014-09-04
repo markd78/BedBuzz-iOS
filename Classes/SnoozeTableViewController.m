@@ -205,8 +205,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	int newRow = [indexPath row];
-	int oldRow = [self.lastIndexPath row];
+	NSInteger newRow = [indexPath row];
+	NSInteger oldRow = [self.lastIndexPath row];
 	UserModel *userModel = [UserModel userModel];
 	
 	if (newRow != oldRow)

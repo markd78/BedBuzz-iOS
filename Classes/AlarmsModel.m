@@ -52,7 +52,7 @@ static AlarmsModel *sharedMyManager = nil;
 	alarm.thursday = true;
 	alarm.friday = true;
 	alarm.saturday = true;
-	NSString *alarmCountStr =[NSString stringWithFormat:@"%d", alarms.count +1];
+	NSString *alarmCountStr =[NSString stringWithFormat:@"%lu", alarms.count +1];
 	alarm.alarmName = [@"Alarm " stringByAppendingString:alarmCountStr];
 	
 	return alarm;

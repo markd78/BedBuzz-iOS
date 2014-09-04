@@ -150,7 +150,7 @@
     }
     else
     {
-        numberOfMessageCreditsLeftLbl.text =  [NSString stringWithFormat:@"%d", userModel.userSettings.sendMessageCredits]; 	
+        numberOfMessageCreditsLeftLbl.text =  [NSString stringWithFormat:@"%ld", (long)userModel.userSettings.sendMessageCredits];
         
         if (userModel.userSettings.sendMessageCredits == 0)
         {
@@ -532,7 +532,7 @@ audioRecorder = [[ AVAudioRecorder alloc] initWithURL:url settings:recordSetting
         audioRecorder.meteringEnabled = YES;
         [audioRecorder record];
     }else {
-        int errorCode = CFSwapInt32HostToBig ([error code]); 
+        long errorCode = CFSwapInt32HostToBig ((unsigned int)[error code]);
         NSLog(@"Error: %@ [%4.4s])" , [error localizedDescription], (char*)&errorCode); 
         
     }

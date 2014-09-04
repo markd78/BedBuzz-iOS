@@ -41,10 +41,10 @@
 	NSString *minStr;
 	if (sharedManager.selectedAlarm.mins < 10)
 	{
-		minStr =  [NSString stringWithFormat:@"0%d",sharedManager.selectedAlarm.mins];
+		minStr =  [NSString stringWithFormat:@"0%ld",(long)sharedManager.selectedAlarm.mins];
 	}
 	else {
-		minStr =  [NSString stringWithFormat:@"%d",sharedManager.selectedAlarm.mins];
+		minStr =  [NSString stringWithFormat:@"%ld",(long)sharedManager.selectedAlarm.mins];
 	}
     
     NSString *amPMStr;
@@ -57,7 +57,7 @@
         amPMStr = @"pm";
     }
     
-    int hourForStr = sharedManager.selectedAlarm.hour;
+    NSInteger hourForStr = sharedManager.selectedAlarm.hour;
 	// if amPMStr is empty, it means they have 24 hour mode on the iphone
 	if ([amPMStr length] > 0)
 	{
@@ -68,7 +68,7 @@
 	}
 	
     
-	NSString *timeStr = [NSString stringWithFormat:@"%d:%@ %@", hourForStr, minStr,amPMStr];
+	NSString *timeStr = [NSString stringWithFormat:@"%ld:%@ %@", (long)hourForStr, minStr,amPMStr];
     
     
     

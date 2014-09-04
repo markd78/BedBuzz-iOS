@@ -190,7 +190,7 @@ heightForFooterInSection:(NSInteger)section {
         [but release];
         
         //create the button
-       /* UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         
         [button setFrame:CGRectMake(10, 20, 300, 44)];
         
@@ -220,7 +220,7 @@ heightForFooterInSection:(NSInteger)section {
 	
 	FacebookModel *fbModel = [FacebookModel sharedManager];
 	
-	int numberOfFriends;
+	NSInteger numberOfFriends;
 	
 	if (isBedBuzzFriendsMode)
 	{

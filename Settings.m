@@ -43,7 +43,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
-	[coder encodeInt:snoozeLength forKey:@"snoozeLength"];
+	[coder encodeInteger:snoozeLength forKey:@"snoozeLength"];
 	[coder encodeBool:isTwentyFourHourMode forKey:@"isTwentyFourHourMode"];
 	[coder encodeBool:isCelcius forKey:@"isCelcius"];
 	[coder encodeBool:shouldGreetWithName forKey:@"shouldGreetWithName"];
@@ -58,17 +58,17 @@
 	[coder encodeObject:appVersion forKey:@"appVersion"];
 	[coder encodeObject:bedBuzzID  forKey:@"bedBuzzID"];
 	[coder encodeBool:isPaidUser  forKey:@"isPaidUser"];
-    [coder encodeInt:changeVoiceNameCredits forKey:@"changeVoiceNameCredits"];
-    [coder encodeInt:sendMessageCredits forKey:@"sendMessageCredits"];
+    [coder encodeInteger:changeVoiceNameCredits forKey:@"changeVoiceNameCredits"];
+    [coder encodeInteger:sendMessageCredits forKey:@"sendMessageCredits"];
     [coder encodeObject:subscriberUntilDate forKey:@"subscriberUntilDate"];
-    [coder encodeInt:numberOfAlarmsHappened forKey:@"numberOfAlarmsHappened"];
+    [coder encodeInteger:numberOfAlarmsHappened forKey:@"numberOfAlarmsHappened"];
     [coder encodeBool:haveShownReviewRequest  forKey:@"haveShownReviewRequest"];
     [coder encodeBool:haveShownHelpScreen  forKey:@"haveShownHelpScreen"];
     [coder encodeBool:heardSelectFriendsMessage  forKey:@"heardSelectFriendsMessage"];
     [coder encodeBool:heardComposeMessageHelp  forKey:@"heardComposeMessageHelp"];
     [coder encodeBool:hideFacebookBtn  forKey:@"hideFacebookBtn"];
     [coder encodeBool:showTitleBar  forKey:@"showTitleBar"];
-     [coder encodeInt:popupMessageCount forKey:@"popupMessageCount"];
+     [coder encodeInteger:popupMessageCount forKey:@"popupMessageCount"];
     [coder encodeBool:userHasChangedVoice  forKey:@"userHasChangedVoice"];
 }
 

@@ -19,7 +19,7 @@
     if (self) {
         // Initialization code.
 		UserModel *userModel = [UserModel userModel];
-		snoozeLengthLbl.text = [NSString stringWithFormat:@"%d minutes", userModel.userSettings.snoozeLength];
+		snoozeLengthLbl.text = [NSString stringWithFormat:@"%ld minutes", (long)userModel.userSettings.snoozeLength];
     }
     return self;
 }
@@ -31,7 +31,7 @@
     
     // Configure the view for the selected state.
 	UserModel *userModel = [UserModel userModel];
-	snoozeLengthLbl.text = [NSString stringWithFormat:@"%d minutes", userModel.userSettings.snoozeLength];
+	snoozeLengthLbl.text = [NSString stringWithFormat:@"%ld minutes", (long)userModel.userSettings.snoozeLength];
 }
 
 

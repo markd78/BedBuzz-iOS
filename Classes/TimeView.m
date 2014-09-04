@@ -116,7 +116,7 @@
     }
     NSMutableArray  *normalGradientColors = colors;
 	
-    int locCount = [normalGradientLocations count];
+    NSUInteger locCount = [normalGradientLocations count];
     CGFloat locations[locCount];
     for (int i = 0; i < [normalGradientLocations count]; i++)
     {

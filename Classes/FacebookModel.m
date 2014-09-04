@@ -335,7 +335,7 @@ static FacebookModel *sharedMyManager = nil;
     facebookGotFriendsDelegate = delegateClass;
     
 	NSString *fql = [NSString localizedStringWithFormat:
-					 @"SELECT uid, name,  pic_square, is_app_user FROM user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY last_name",myfbID];
+					 @"SELECT uid, name,  pic_square, is_app_user FROM user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY last_name"];
 	
 	
 	NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObject:fql forKey:@"query"];

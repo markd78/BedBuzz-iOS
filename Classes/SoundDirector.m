@@ -242,19 +242,19 @@ static SoundDirector *sharedSoundDirector = nil;
 	NSString *file;
 	if (day!=1 && day!=2 && day!=3 && day!=21 && day!=22 && day!=23 && day!=31)
 	{
-		file = [NSString stringWithFormat:@"monthDates/%dth.mp3", day];
+		file = [NSString stringWithFormat:@"monthDates/%ldth.mp3", (long)day];
 	}
 	else if (day == 1 || day == 21 || day ==31)
 	{
-		file = [NSString stringWithFormat:@"monthDates/%dst.mp3", day];	
+		file = [NSString stringWithFormat:@"monthDates/%ldst.mp3", (long)day];	
 	}
 	else if (day == 2 || day == 22)
 	{
-		file = [NSString stringWithFormat:@"monthDates/%dnd.mp3", day];	
+		file = [NSString stringWithFormat:@"monthDates/%ldnd.mp3", (long)day];	
 	}
 	else if (day == 3 || day == 23)
 	{
-		file = [NSString stringWithFormat:@"monthDates/%drd.mp3", day];	
+		file = [NSString stringWithFormat:@"monthDates/%ldrd.mp3", (long)day];	
 	}
 	
 	return file;
@@ -363,14 +363,14 @@ static SoundDirector *sharedSoundDirector = nil;
 		hour = hour -12;
 	}
 	
-	NSString *hourFile = [NSString stringWithFormat:@"numbers/%d.mp3", hour];
+	NSString *hourFile = [NSString stringWithFormat:@"numbers/%ld.mp3", (long)hour];
 	
 	hourFile = [NSString stringWithFormat:@"%@/%@", [self getVoiceDir], hourFile] ; 
 	
 	
 	NSInteger minute = [components minute];
 	
-	NSString *minuteFile = [NSString stringWithFormat:@"numbers/%d", minute] ;
+	NSString *minuteFile = [NSString stringWithFormat:@"numbers/%ld", (long)minute] ;
     
 	minuteFile = [minuteFile stringByAppendingString:@".mp3"];
 	

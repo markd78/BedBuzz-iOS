@@ -105,7 +105,7 @@
 		// delete the alarm
 		RSSModel *rssModel = [RSSModel sharedManager];
 		RSSFeed *rssFeedCellValue = [[rssModel rssFeeds] objectAtIndex:indexPath.row];
-		int index = [rssModel.rssFeeds indexOfObject:rssFeedCellValue];
+		NSInteger index = [rssModel.rssFeeds indexOfObject:rssFeedCellValue];
 		[rssModel.rssFeeds removeObjectAtIndex:index];
 		[rssModel saveRSSFeeds];
 		
@@ -116,7 +116,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	// Return the number of rows in the section.
 	RSSModel *rssModel = [RSSModel sharedManager];
-	int numberOfRSSFeeds = [rssModel.rssFeeds count];
+	NSInteger numberOfRSSFeeds = [rssModel.rssFeeds count];
     return numberOfRSSFeeds;
 }
 
