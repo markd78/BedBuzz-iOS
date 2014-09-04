@@ -1,0 +1,340 @@
+{
+    "condition": [
+        {
+            "code": "395",
+            "description": "Stormy.  Moderate or heavy snow in the area with thunder",
+            "day_icon": "snowWithStorm",
+            "night_icon": "snowWithStorm",
+            "sound": "moderateOrHeavySnowWithThunder"
+        },
+        {
+            "code": "392",
+            "description": "Stormy.  Patchy light snow in the area with thunder",
+            "day_icon": "snowWithStorm",
+            "night_icon": "snowWithStorm",
+            "sound": "patchyLightSnowInAreaWithThunder"
+        },
+        {
+            "code": "389",
+            "description": "Stormy.  Moderate or heavy rain in the area with thunder",
+            "day_icon": "stormy_with_rain",
+            "night_icon": "stormy_with_rain"
+        },
+        {
+            "code": "386",
+            "description": "Stormy.  Patchy light rain in the area with thunder",
+            "day_icon": "stormy_with_rain",
+            "night_icon": "stormy_with_rain",
+            "sound": "patchyLightRainInAreaWithThunder"
+        },
+        {
+            "code": "377",
+            "description": "Moderate or heavy showers of freezing rain",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "moderateOrHeavyShowersOfFreezingRain"
+        },
+        {
+            "code": "374",
+            "description": "Light showers of freezing rain",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "lightShowersOfFreezingRain"
+        },
+        {
+            "code": "371",
+            "description": "Moderate or heavy snow showers",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "moderateOrHeavySnowShowers"
+        },
+        {
+            "code": "368",
+            "description": "Light snow showers",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "lightSnowShowers"
+        },
+        {
+            "code": "365",
+            "description": "Moderate or heavy sleet showers",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "moderateOrHeavySleetShowers"
+        },
+        {
+            "code": "362",
+            "description": "Light sleet showers",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "lightSleetShowers"
+        },
+        {
+            "code": "359",
+            "description": "Torrential rain showers",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "torrentialRainShowers"
+        },
+        {
+            "code": "356",
+            "description": "Moderate or heavy rain showers",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "moderateOrHeavyRainShowers"
+        },
+        {
+            "code": "353",
+            "description": "Light rain showers",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "lightRainShowers"
+        },
+        {
+            "code": "350",
+            "description": "Freezing rain",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "freezingRain"
+        },
+        {
+            "code": "338",
+            "description": "Heavy snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "heavySnow"
+        },
+        {
+            "code": "335",
+            "description": "Patchy heavy snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "patchyHeavySnow"
+        },
+        {
+            "code": "332",
+            "description": "Moderate snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "moderateSnow"
+        },
+        {
+            "code": "329",
+            "description": "Patchy moderate snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "patchyModerateSnow"
+        },
+        {
+            "code": "326",
+            "description": "Light snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "lightSnow"
+        },
+        {
+            "code": "323",
+            "description": "Patchy light snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "patchyLightSnow"
+        },
+        {
+            "code": "320",
+            "description": "Moderate or heavy sleet",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "moderateOrHeavySleet"
+        },
+        {
+            "code": "317",
+            "description": "Light sleet",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "lightSleet"
+        },
+        {
+            "code": "314",
+            "description": "Moderate or Heavy freezing rain",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "moderateOrHeavyFreezingRain"
+        },
+        {
+            "code": "311",
+            "description": "Light freezing rain",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "lightFreezingRain"
+        },
+        {
+            "code": "308",
+            "description": "Heavy rain",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "heavyRain"
+        },
+        {
+            "code": "305",
+            "description": "Heavy rain at times",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "heavyRainAtTimes"
+        },
+        {
+            "code": "302",
+            "description": "Moderate rain",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "moderateRain"
+        },
+        {
+            "code": "299",
+            "description": "Moderate rain at times",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "moderateRainAtTimes"
+        },
+        {
+            "code": "296",
+            "description": "Light rain",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "lightRain"
+        },
+        {
+            "code": "293",
+            "description": "Patchy light rain",
+            "day_icon": "rainShowersWithSun",
+            "night_icon": "partlyRainyWithMoon",
+            "sound": "patchyLightRain"
+        },
+        {
+            "code": "284",
+            "description": "Heavy freezing drizzle",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "heavyFreezingDrizzle"
+        },
+        {
+            "code": "281",
+            "description": "Freezing drizzle",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "freezingDrizzle"
+        },
+        {
+            "code": "266",
+            "description": "Light drizzle",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "lightDrizzle"
+        },
+        {
+            "code": "263",
+            "description": "Patchy light drizzle",
+            "day_icon": "rainy",
+            "night_icon": "rainy",
+            "sound": "patchyLightDrizzle"
+        },
+        {
+            "code": "260",
+            "description": "Freezing fog",
+            "day_icon": "fog",
+            "night_icon": "fog",
+            "sound": "freezingFog"
+        },
+        {
+            "code": "248",
+            "description": "Foggy",
+            "day_icon": "fog",
+            "night_icon": "fog",
+            "sound": "foggy"
+        },
+        {
+            "code": "230",
+            "description": "Blizzards",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "blizzards"
+        },
+        {
+            "code": "227",
+            "description": "Blowing snow",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "blowingSnow"
+        },
+        {
+            "code": "200",
+            "description": "Thundery showers nearby",
+            "day_icon": "stormy_with_rain",
+            "night_icon": "stormy_with_rain",
+            "sound": "thunderyShowersNearby"
+        },
+        {
+            "code": "185",
+            "description": "Patchy freezing drizzle nearby",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "patchyFreezingDrizzleNearbypatchyFreezingDrizzleNearby"
+        },
+        {
+            "code": "182",
+            "description": "Patchy sleet nearby",
+            "day_icon": "sleet",
+            "night_icon": "sleet",
+            "sound": "patchySleetNearby"
+        },
+        {
+            "code": "179",
+            "description": "Patchy snow nearby",
+            "day_icon": "snowy",
+            "night_icon": "snowy",
+            "sound": "patchySnowNearby"
+        },
+        {
+            "code": "176",
+            "description": "Patchy rain nearby",
+            "day_icon": "rainShowersWithSun",
+            "night_icon": "partlyRainyWithMoon",
+            "sound": "patchyRainNearby"
+        },
+        {
+            "code": "143",
+            "description": "Misty",
+            "day_icon": "mist",
+            "night_icon": "mist",
+            "sound": "misty"
+        },
+        {
+            "code": "122",
+            "description": "Overcast",
+            "day_icon": "cloudy-01",
+            "night_icon": "cloudy-01",
+            "sound": "overcast"
+        },
+        {
+            "code": "119",
+            "description": "Cloudy",
+            "day_icon": "cloudy-01",
+            "night_icon": "cloudy-01",
+            "sound": "cloudy"
+        },
+        {
+            "code": "116",
+            "description": "Partly Cloudy",
+            "day_icon": "partlyCloudyWithSun",
+            "night_icon": "partlyCloudyWithMoon",
+            "sound": "partlyCloudy"
+        },
+        {
+            "code": "113",
+            "description": "Sunny",
+            "day_icon": "sunny-01",
+            "night_icon": "moon",
+            "sound": "sunny"
+        }
+    ],
+    "sound": "moderateOrHeavyRainInAreaWithThunder"
+}

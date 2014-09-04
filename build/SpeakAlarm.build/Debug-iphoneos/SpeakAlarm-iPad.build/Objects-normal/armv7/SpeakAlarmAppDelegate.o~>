@@ -1,0 +1,36 @@
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:12:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:12:28: error: WeatherForecast.h: No such file or directory
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:12:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:31: error: expected specifier-qualifier-list before 'WeatherForecast'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:32: error: expected specifier-qualifier-list before 'WeatherForecast'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:33: error: expected specifier-qualifier-list before 'WeatherForecast'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:50: error: expected specifier-qualifier-list before 'WeatherForecast'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:51: error: expected specifier-qualifier-list before 'WeatherForecast'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/WeatherModel.h:52: error: expected specifier-qualifier-list before 'WeatherForecast'
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:13:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:14:20: error: Message.h: No such file or directory
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:15:20: error: RSSClip.h: No such file or directory
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:13:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:24: error: expected specifier-qualifier-list before 'Message'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:48: error: expected ')' before 'RSSClip'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:49: error: expected ')' before 'Message'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SoundDirector.h:50: error: expected ')' before 'RSSClip'
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:16:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/UserModel.h:10:21: error: Settings.h: No such file or directory
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:16:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/UserModel.h:13: error: expected specifier-qualifier-list before 'Settings'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/UserModel.h:20: error: expected specifier-qualifier-list before 'Settings'
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:17:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/LoginViewController.h:10:21: error: Facebook.h: No such file or directory
+In file included from /Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:19:
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/FacebookModel.h:17: error: cannot find protocol declaration for 'FBRequestDelegate'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/FacebookModel.h:17: error: cannot find protocol declaration for 'FBDialogDelegate'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/FacebookModel.h:17: error: cannot find protocol declaration for 'FBSessionDelegate'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/FacebookModel.h:19: error: expected specifier-qualifier-list before 'Facebook'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m: In function '-[SpeakAlarmAppDelegate applicationDidFinishLaunching:]':
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:122: error: request for member 'userSettings' in something not a structure or union
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:133: error: request for member 'userSettings' in something not a structure or union
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:146: error: request for member 'userSettings' in something not a structure or union
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:146: error: request for member 'userSettings' in something not a structure or union
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:149: error: request for member 'userSettings' in something not a structure or union
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/SpeakAlarmAppDelegate.m:161: error: request for member 'userSettings' in something not a structure or union

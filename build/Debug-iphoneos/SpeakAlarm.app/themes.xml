@@ -1,0 +1,35 @@
+<themes>
+	<theme>
+		<name>Sunrise</name>
+		<backgroundImage>/assets/themeImages/sunrise.jpg</backgroundImage>
+		<textColor>0xffffff</textColor>
+		<style>normal</style>
+		<thumbnailImage>/assets/themeThumbs/sunriseScreenshot.png</thumbnailImage>
+		<description>Sunrise at Haleakala crater, Maui</description>
+	</theme>
+	<theme>
+		<name>Sunrise 2</name>
+		<backgroundImage>/assets/themeImages/sunrise2.jpg</backgroundImage>
+		<textColor>0xffffff</textColor>
+		<style>normal</style>
+		<thumbnailImage>/assets/themeThumbs/sunrise2Thumb.png</thumbnailImage>
+		<description>Sunrise at Haleakala crater, Maui</description>
+	</theme>
+	<theme>
+		<name>Palms</name>
+		<backgroundImage>/assets/themeImages/palms.jpg</backgroundImage>
+		<textColor>0xffffff</textColor>
+		<style>normal</style>
+		<thumbnailImage>/assets/themeThumbs/palmsThumb.png</thumbnailImage>
+		<description>Palm Trees</description>
+	</theme>
+	<theme>
+		<name>High Contrast</name>
+		<backgroundImage>/assets/themeImages/black.jpg</backgroundImage>
+		<textColor>0xffffff</textColor>
+		<style>largeFont</style>
+		<thumbnailImage>/assets/themeThumbs/highContrastScreenshot.png</thumbnailImage>
+		<description>Bright green on black, with larger font</description>
+	</theme>
+	
+</themes>

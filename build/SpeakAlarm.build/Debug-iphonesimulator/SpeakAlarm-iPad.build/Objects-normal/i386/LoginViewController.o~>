@@ -1,0 +1,2 @@
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/LoginViewController.m: In function '-[LoginViewController userLoggedIn]':
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/LoginViewController.m:142: warning: type 'id <UIApplicationDelegate>' does not conform to the 'LoginServiceDelegate' protocol

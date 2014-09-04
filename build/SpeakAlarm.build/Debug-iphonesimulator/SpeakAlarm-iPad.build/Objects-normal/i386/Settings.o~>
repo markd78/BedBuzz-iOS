@@ -1,0 +1,3 @@
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/../Settings.m:27: error: type of property 'bedBuzzID' does not match type of ivar 'bedBuzzID'
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/../Settings.m: In function '-[Settings initWithCoder:]':
+/Users/markdavies/Documents/iphone apps/SpeakAlarm/Classes/../Settings.m:64: warning: passing argument 1 of 'setBedBuzzID:' makes integer from pointer without a cast
