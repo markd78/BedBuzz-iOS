@@ -886,22 +886,7 @@
 
 -(void)repositionAdsForIpad
 {
-    if((void *)UI_USER_INTERFACE_IDIOM() != NULL &&
-       UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        switch ([UIApplication sharedApplication].statusBarOrientation) {
-            case UIInterfaceOrientationPortrait:
-            case UIInterfaceOrientationPortraitUpsideDown:
-                adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-                
-                break;
-            case UIInterfaceOrientationLandscapeLeft:
-            case UIInterfaceOrientationLandscapeRight:
-                adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-                break;
-            default:
-                adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-        }
-    }
+    adBannerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -1095,7 +1080,7 @@
         
         if((void *)UI_USER_INTERFACE_IDIOM() != NULL &&
            UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            [self presentModalViewController:alarmGoingOffViewController animated:YES];
+            [self presentViewController:alarmGoingOffViewController animated:YES completion:nil];
         }
         else
         {
@@ -1310,7 +1295,7 @@
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:settingsView];
    	
     navController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentModalViewController:navController animated:YES];
+    [self presentViewController:navController animated:YES completion:nil];
     
     if (showFromWizardScreen==changeVoiceScreen)
     {
@@ -1439,7 +1424,7 @@
             UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:messagesView];
             
             navController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-            [self presentModalViewController:navController animated:YES];
+            [self presentViewController:navController animated:YES completion:nil];
         }
     }
     else

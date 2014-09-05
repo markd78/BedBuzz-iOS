@@ -38,7 +38,7 @@
 }
 
 -(IBAction)cancel:(id)sender{
-	[self.navigationController dismissModalViewControllerAnimated:YES];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 } 
 
 -(IBAction)nextBtnClicked:(id)sender{

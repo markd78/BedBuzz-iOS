@@ -51,8 +51,7 @@
     imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePickerController.navigationBar.tintColor =  self.navigationController.navigationBar.tintColor;
     imagePickerController.navigationBar.barStyle =self.navigationController.navigationBar.barStyle; 
-    [self.navigationController presentModalViewController:imagePickerController animated:YES];
-	
+	 [self.navigationController presentViewController:imagePickerController animated:YES completion:nil];
 	
 }
 
@@ -101,7 +100,7 @@
 {
 	
 	// Dismiss the image selection, hide the picker and
-	[imagePickerController dismissModalViewControllerAnimated:YES];
+    [imagePickerController dismissViewControllerAnimated:YES completion:nil];
     
     [NSThread detachNewThreadSelector:@selector(saveImageThread:) toTarget:self withObject:image];
     
@@ -236,8 +235,7 @@
 	
 	// Dismiss the image selection
 	
-	[imagePickerController dismissModalViewControllerAnimated:YES];
-	
+	[imagePickerController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

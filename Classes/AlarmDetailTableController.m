@@ -432,7 +432,7 @@ heightForFooterInSection:(NSInteger)section {
 	picker.allowsPickingMultipleItems       = NO;
 	picker.prompt                                           = NSLocalizedString (@"Select any song from the list", @"Select a song for the alarm...");
 	
-	[self presentModalViewController: picker animated: YES];
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 
@@ -490,8 +490,7 @@ heightForFooterInSection:(NSInteger)section {
     }
     else
     {
-        [self dismissModalViewControllerAnimated: YES];
-        
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
     
 	
@@ -510,7 +509,7 @@ heightForFooterInSection:(NSInteger)section {
     }
     else
     {
-        [self dismissModalViewControllerAnimated: YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

@@ -652,7 +652,7 @@ audioRecorder = [[ AVAudioRecorder alloc] initWithURL:url settings:recordSetting
         [[[[iToast makeText:NSLocalizedString(@"Message sent!", @"")] 
            setGravity:iToastGravityBottom] setDuration:1000] show];
         
-        [self.navigationController dismissModalViewControllerAnimated:YES];
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
     
     UserModel *userModel = [UserModel userModel];

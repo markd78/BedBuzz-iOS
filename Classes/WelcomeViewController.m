@@ -67,7 +67,6 @@
     [super viewDidLoad];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:YES];
-    [self setWantsFullScreenLayout:YES];
 
     
     SpeakAlarmAppDelegate *appDelegate = (SpeakAlarmAppDelegate*)[[UIApplication sharedApplication] delegate];
@@ -151,8 +150,10 @@
             }
            
             
-            appDelegate.clockViewController = [[ClockViewController alloc] initWithNibName:@"Clock" bundle:nil]; 
-            [self presentModalViewController:appDelegate.clockViewController animated:NO];
+            appDelegate.clockViewController = [[ClockViewController alloc] initWithNibName:@"Clock" bundle:nil];
+            
+            [self presentViewController:appDelegate.clockViewController animated:NO completion:nil];
+            
             break;
         default:
             break;

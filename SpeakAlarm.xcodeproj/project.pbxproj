@@ -2493,7 +2493,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Davies (P2H4KKV2V3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -2511,27 +2511,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/ISpeechLibrary/iphoneos\\\"",
-					"\\\"$(SRCROOT)/ISpeechLibrary/iphonesimulator\\\"",
 					"$(SRCROOT)",
-					/Users/markdavies/Documents/iphone,
-					apps/AngryAlarm/Flurry,
-					"$(PROJECT_DIR)/Flurry",
-					iPhone,
-					SDK,
-					viPhone,
-					"4.4.0/Flurry-iOS-4.4.0/Flurry",
-					"$(PROJECT_DIR)/Flurry",
-					iPhone,
-					SDK,
-					viPhone,
-					"4.4.0/Flurry-iOS-4.4.0/FlurryAds",
 					"$(PROJECT_DIR)/Flurry",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BedBuzz;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B67474BF-984B-44F1-B08F-A361729481A4";
+				PROVISIONING_PROFILE = "18c0ad4f-9196-4704-9b9f-cb29a51c1ed1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18c0ad4f-9196-4704-9b9f-cb29a51c1ed1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2558,21 +2544,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/ISpeechLibrary/iphoneos\\\"",
-					"\\\"$(SRCROOT)/ISpeechLibrary/iphonesimulator\\\"",
 					"$(SRCROOT)",
-					/Users/markdavies/Documents/iphone,
-					apps/AngryAlarm/Flurry,
-					"$(PROJECT_DIR)/Flurry",
-					iPhone,
-					SDK,
-					viPhone,
-					"4.4.0/Flurry-iOS-4.4.0/Flurry",
-					"$(PROJECT_DIR)/Flurry",
-					iPhone,
-					SDK,
-					viPhone,
-					"4.4.0/Flurry-iOS-4.4.0/FlurryAds",
 					"$(PROJECT_DIR)/Flurry",
 				);
 				OTHER_LDFLAGS = "-ObjC";

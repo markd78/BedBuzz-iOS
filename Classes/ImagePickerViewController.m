@@ -47,7 +47,7 @@
 	
 	//show the image view with the picked image
 	
-	[picker dismissModalViewControllerAnimated:YES];
+	[picker dismissViewControllerAnimated:YES completion:nil];
     imagePickerController.view.hidden = YES;
 	
 	// now go back
@@ -58,8 +58,7 @@
 {
 	
 	// Dismiss the image selection 	
-	[picker dismissModalViewControllerAnimated:YES];
-	
+	[picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
