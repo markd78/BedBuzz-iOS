@@ -14,19 +14,13 @@
 #import "ClockModel.h"
 #import "UserModel.h"
 #import "SpeakAlarmAppDelegate.h"
-#import "SelectFriendsForMessageViewController.h"
-#import "FacebookModel.h"
 #import "iToast.h"
 #import "MessagingModel.h"
 #import "FetchMessagesService.h"
 #import "Reachability.h"
-#import "SelectFriendsForMessageViewController.h"
 #import "HelpScreenViewController.h"
-#import "SendMessageWizardViewController.h"
 #import "ViewHelper.h"
 #import "PleaseReviewController.h"
-#import "Welcome3EnableFacebookViewController.h"
-#import  "RedirectingToFacebookViewController.h"
 #import "ChangeVoiceQuestionViewController.h"
 #import "Utilities.h"
 #import "SubscribeQuestionViewController.h"
@@ -43,12 +37,9 @@
 @synthesize facebookButton;
 @synthesize mService;
 @synthesize settingsPopoverController;
-@synthesize messagingPopoverController;
 @synthesize settingsViewController;
 @synthesize settingsBtn;
 @synthesize helper;
-@synthesize redirectScreen;
-@synthesize welcome3;
 @synthesize subscribeWizard;
 @synthesize changeVoiceWizard;
 
@@ -204,9 +195,6 @@
     MessagingModel *messagingModel = [MessagingModel sharedManager];
     [messagingModel.targetFriends removeAllObjects];
     
-    UINavigationController *navController = (UINavigationController*)self.messagingPopoverController.contentViewController;
-    
-    [navController popToRootViewControllerAnimated:NO];
     
     UINavigationController *navControllerSettings = (UINavigationController*)self.settingsPopoverController.contentViewController;
     
@@ -282,15 +270,6 @@
         weatherImageView.hidden = NO;
         weatherTempLbl.hidden = NO;
         weatherTempUnitLbl.hidden = NO;
-        FacebookModel *model = [FacebookModel sharedManager];
-        
-        if (userModel.userSettings.fbID != nil  && [userModel.userSettings.fbID intValue]!=-1 && model.friendsList==nil)
-        {
-            [self showRefreshingFriendsSpinner];
-            
-            [model getFacebookFriendsAndReturnTo:self];
-        }
-        
         WeatherModel *weatherModel = [WeatherModel weatherModel];
         if (weatherModel.weatherNow == nil)
         {
@@ -465,7 +444,7 @@
         [self.view addSubview:helper.view];
     }
     
-    [facebookButton setHidden:userModel.userSettings.hideFacebookBtn];
+    [facebookButton setHidden:true];
     
     UIDevice *device = [UIDevice currentDevice];
     device.batteryMonitoringEnabled = YES;
@@ -495,17 +474,6 @@
 	self.currentThemeType = userModel.userSettings.themeName;
     
     
-	
-    if (userModel.userSettings.fbID != nil  && [userModel.userSettings.fbID intValue]!=-1 && !userModel.userSettings.isOfflineMode)
-    {
-        [self showRefreshingFriendsSpinner];
-        FacebookModel *model = [FacebookModel sharedManager];
-        [model getFacebookFriendsAndReturnTo:self];
-    }
-    else
-    {
-        refreshFriendsSpinner.hidden = YES;
-    }
     
     // check if the user has unread messages
     messagesButton.hidden = YES;
@@ -527,34 +495,6 @@
     }
     
     
-}
-
--(void)showSendMessageQuestion
-{
-    // if there is already a wizard showing, do not show another over the top of it
-    if (currentWizardView!=nil)
-    {
-        return;
-    }
-
-    
-    SoundDirector *soundDirector = [SoundDirector soundDirector];
-    [soundDirector stopSounds];
-    UserModel *userModel = [UserModel userModel];
-    if (userModel.userSettings.fbID!=nil && [userModel.userSettings.fbID intValue]!=-1)
-    {
-        [soundDirector saySendMessageQuestion];
-        
-        
-        ViewHelper *vh = [ViewHelper sharedManager];
-        SendMessageWizardViewController *wizard = [[SendMessageWizardViewController alloc] initWithNibName:@"Welcome4SendMessage" bundle:nil AndReturnTo:self];
-        currentWizardView =  wizard.view;
-        
-        wizard.view = [vh formatTheViewForDarkWizard:wizard.view];
-        
-        [self.view addSubview:wizard.view];
-        [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-    }
 }
 
 -(void)showChangeVoiceQuestion
@@ -675,22 +615,7 @@
     
     ViewHelper *vh = [ViewHelper sharedManager];
     
-    if (screen == messagingScreen)
-    {
-        [self showMessaging:facebookButton];
-         currentWizardView = nil;
-    }
-    else if (screen == redirectingToFacebook)
-    {
-        self.redirectScreen = [[RedirectingToFacebookViewController alloc] initWithNibName:@"RedirectingTofacebook" bundle:nil AndReturnTo:self];
-        currentWizardView =  redirectScreen.view;
-        
-        redirectScreen.view = [vh formatTheViewForDarkWizard:redirectScreen.view];
-        
-        [self.view addSubview:redirectScreen.view];
-        [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-    }
-    else if (screen == changeVoiceScreen)
+    if (screen == changeVoiceScreen)
     {
         [self showChangeVoiceScreen];
     }
@@ -897,7 +822,6 @@
        UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         
         // close the popovers
-        [self.messagingPopoverController dismissPopoverAnimated:YES];
         [self.settingsPopoverController dismissPopoverAnimated:YES];
         [self.settingsViewController.themesTableViewController.imagePopoverController dismissPopoverAnimated:NO];
         
@@ -1317,49 +1241,7 @@
     
 }
 
--(void)showMessagingInPopup:(id)sender {
-    
-    if (self.messagingPopoverController == nil) {
-        SelectFriendsForMessageViewController *messagesView = [[SelectFriendsForMessageViewController alloc] initWithNibName:@"SelectFriendsForMessage" bundle:[NSBundle mainBundle]];
-        
-        messagesView.navigationItem.title = @"Select friends for message";
-        UINavigationController *navController = 
-        [[UINavigationController alloc] 
-         initWithRootViewController:messagesView];
-        
-        UIPopoverController *popover = 
-        [[UIPopoverController alloc] initWithContentViewController:navController]; 
-        
-        popover.delegate = self;
-        
-        self.messagingPopoverController = popover;
-    }
-    
-    CGRect popoverRect = [self.view convertRect:[sender frame] 
-                                       fromView:[sender superview]];
-    
-    popoverRect.size.width = MIN(popoverRect.size.width, 100); 
-    [self.messagingPopoverController 
-     presentPopoverFromRect:popoverRect 
-     inView:self.view 
-     permittedArrowDirections:UIPopoverArrowDirectionAny 
-     animated:YES];   
-    
-    
-}
 
--(void)showLoginWithFacebookWizard
-{
-    ViewHelper *vh = [ViewHelper sharedManager];
-    welcome3 = [[Welcome3EnableFacebookViewController alloc] initWithNibName:@"Welcome3EnableFacebook" bundle:nil AndReturnTo:self];
-    currentWizardView =  welcome3.view;
-    
-    welcome3.view = [vh formatTheViewForDarkWizard:welcome3.view];
-    
-    [self.view addSubview:welcome3.view];
-    [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-    
-}
 
 -(void)showSubscribeScreenInPopup {
     [self showSettingsforIPad:subscribeScreen];
@@ -1396,45 +1278,6 @@
     }
 }
 
-- (IBAction)showMessaging:(id)sender {
-    fromAppLoad = NO;
-    
-    [self hideAds];
-    
-    // reset target friends
-    FacebookModel *fbModel = [FacebookModel sharedManager];
-    [fbModel clearTargetFriends];
-    
-    
-    
-	UserModel *userModel = [UserModel userModel];
-    
-    if (userModel.userSettings.fbID!=nil && [userModel.userSettings.fbID intValue]!=-1)
-    {
-        if((void *)UI_USER_INTERFACE_IDIOM() != NULL &&
-           UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) 
-        {
-            [self showMessagingInPopup:sender];
-        } 
-        else
-        {
-            // if user is logged into facebook, show messages view	
-            SelectFriendsForMessageViewController *messagesView = [[SelectFriendsForMessageViewController alloc] initWithNibName:@"SelectFriendsForMessage" bundle:nil];
-            
-            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:messagesView];
-            
-            navController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-            [self presentViewController:navController animated:YES completion:nil];
-        }
-    }
-    else
-    {
-        // get the user to log in to FB
-        [self showLoginWithFacebookWizard];
-    }
-	
-}
-
 
 
 
@@ -1459,45 +1302,6 @@
 	
 }
 
-
-
--(void)loginToFB
-{
-    FacebookModel *fbModel = [FacebookModel sharedManager];
-    [fbModel fbLoginAndReturnTo:self];
-}
-
--(void) facebookLoggedIn 
-{
-    justLoggedInToFacebook  = YES;
-    
-    FacebookModel *model = [FacebookModel sharedManager];
-    
-    [model getNameOfUserAndReturnTo:self];
-}
-
--(void) facebookGotUserName:(NSString*)name andID:(NSString*)facebookID 
-{
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-	[f setNumberStyle:NSNumberFormatterDecimalStyle];
-	NSNumber *fbIDNum = [f numberFromString:facebookID];
-	
-	UserModel *userModel = [UserModel userModel];
-	// save to model
-	[userModel.userSettings setFbID:fbIDNum ];	
-	[userModel.userSettings setUserFullName:name];
-    
-    [userModel saveUserSettings];
-    
-	FacebookModel *model = [FacebookModel sharedManager];
-	//[model getMessageToPost];
-    
-    // now update the db with the users fbID 
-    [model updateUsersFacebookIDWithFacebookID:userModel.userSettings.fbID andBedBuzzID:userModel.userSettings.bedBuzzID];
-    
-    // now fetch the friends
-    [model getFacebookFriendsAndReturnTo:self];
-}
 
 -(void)refreshUnreadMessages
 {

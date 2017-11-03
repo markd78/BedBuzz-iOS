@@ -11,9 +11,6 @@
 #import "WeatherUpdatedDelegate.h"
 #import "AlarmListenDelegate.h"
 #import "AlarmGoingOffViewController.h"
-#import "FacebookGotFriendsDelegate.h"
-#import "FacebookLoggedInDelegate.h"
-#import "FacebookGotUserNameDelegate.h"
 #import "GetUnreadMessagesCountDelegate.h"
 #import "FetchMessagesService.h"
 #import "FetchMessagesDelegate.h"
@@ -21,14 +18,12 @@
 #import "HelpScreenViewController.h"
 #import "HelpScreenDelegate.h"
 #import "WizardDelegate.h"
-#import "RedirectingToFacebookViewController.h"
-#import "Welcome3EnableFacebookViewController.h"
 #import "ViewHelper.h"
 #import "Reachability.h"
 #import "SubscribeQuestionViewController.h"
 #import "ChangeVoiceQuestionViewController.h"
 
-@interface ClockViewController : UIViewController <WeatherUpdatedDelegate, AlarmListenDelegate,FacebookGotFriendsDelegate, FacebookLoggedInDelegate, FacebookGotUserNameDelegate, GetUnreadMessagesCountDelegate, FetchMessagesDelegate, UIPopoverControllerDelegate,ADBannerViewDelegate, HelpScreenDelegate, WizardDelegate> {
+@interface ClockViewController : UIViewController <WeatherUpdatedDelegate, AlarmListenDelegate, GetUnreadMessagesCountDelegate, FetchMessagesDelegate, UIPopoverControllerDelegate,ADBannerViewDelegate, HelpScreenDelegate, WizardDelegate> {
 	IBOutlet UIImageView* backgroundImageView;
 	IBOutlet UIImageView* weatherImageView;
 	IBOutlet UILabel* weatherTempLbl;
@@ -55,7 +50,6 @@
     
      UIPopoverController *settingsPopoverController;
     UIPopoverController *messagingPopoverController;
-    RedirectingToFacebookViewController *redirectScreen;
 	IBOutlet UIActivityIndicatorView *refreshWeatherSpinner;
     IBOutlet UIActivityIndicatorView *refreshFriendsSpinner;
 	AlarmGoingOffViewController *alarmGoingOffViewController;
@@ -67,7 +61,6 @@
      NSTimer *weatherTimer;
     FetchMessagesService *mService;
     HelpScreenViewController *helper;
-    Welcome3EnableFacebookViewController *welcome3;
     CGFloat currentWidth;
     CGFloat currentHeight;
     
@@ -118,7 +111,6 @@
 @property (nonatomic, strong) SettingsViewController *settingsViewController; 
 @property (nonatomic, strong) HelpScreenViewController *helper; 
 @property (nonatomic, strong) UIPopoverController *settingsPopoverController; 
-@property (nonatomic, strong) UIPopoverController *messagingPopoverController; 
 @property (nonatomic, strong) NSString *currentThemeType;
 @property (nonatomic, strong) IBOutlet UILabel *dateLabel;
 @property (nonatomic, strong) IBOutlet UILabel *weatherTempLbl;
@@ -130,8 +122,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, strong)  FetchMessagesService *mService;
 @property (nonatomic, strong)  UIButton *settingsBtn;
-@property (nonatomic, strong)  RedirectingToFacebookViewController *redirectScreen;
-@property (nonatomic, strong)  Welcome3EnableFacebookViewController *welcome3;
 @property (nonatomic, strong) SubscribeQuestionViewController *subscribeWizard;
 @property (nonatomic, strong) ChangeVoiceQuestionViewController *changeVoiceWizard;
 @end

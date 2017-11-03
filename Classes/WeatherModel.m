@@ -9,14 +9,12 @@
 #import <CoreLocation/CoreLocation.h>
 
 #import "WeatherModel.h"
-#import "JSON.h"
 #import "WeatherCondition.h"
 #import "WUndergroundReport.h"
-#import "iSpeechService.h"
+#import "AmazonPoly.h"
 #import "UserModel.h"
 #import "WeatherSpeechGeneratedDelegate.h"
 #import "WeatherUndergroundService.h"
-
 
 static WeatherModel *sharedWeatherModel = nil;
 
@@ -67,6 +65,8 @@ static WeatherModel *sharedWeatherModel = nil;
     location =nil;
     self.locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
+    
+    [self.locationManager requestWhenInUseAuthorization];
 	
 	[locationManager startUpdatingLocation];
 	[self setDelegate:delegateClass];
@@ -118,7 +118,9 @@ static WeatherModel *sharedWeatherModel = nil;
 	NSString *resource = [[NSBundle mainBundle] pathForResource:@"wwoConditionCodes" ofType:@"json"];
 	NSString *content = [NSString stringWithContentsOfFile:resource  encoding:NSUTF8StringEncoding error:nil];
 	
-	NSDictionary *resultDict = [content JSONValue];
+    NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
+
+	NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 
 	[self setWeatherConditions:[[NSMutableDictionary alloc] init]];
 	
@@ -272,7 +274,7 @@ static WeatherModel *sharedWeatherModel = nil;
     }
     
 	// generate the sounds	
-	iSpeechService *iSpeech = [[iSpeechService alloc] init];
+	AmazonPoly *iSpeech = [[AmazonPoly alloc] init];
 	[iSpeech startGenerateSpeech:weatherTxt AndSaveToFileName:@"weatherTxt.mp3" withVoice:userModel.userSettings.voiceName AndReturnTo:self];
 	
 } 

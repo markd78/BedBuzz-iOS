@@ -17,7 +17,6 @@
 #import "RSSFeed.h"
 #import "SpeakAlarmAppDelegate.h"
 #import "Flurry.h"
-#import "MessageViewViewController.h"
 #import "UIWebView+Clean.h"
 
 @implementation AlarmGoingOffViewController
@@ -303,43 +302,6 @@
     
 }
 
--(void)messageIsBeingPlayed:(MessageVO *)message
-{
-    messageViewController = [[MessageViewViewController alloc] initWithNibName:@"MessageView" bundle:nil withMessage:message];
-    
-    
-    
-    [self.view addSubview:messageViewController.view];
-    
-    
-    // start off screen
-    [messageViewController.view setFrame:CGRectMake(0+self.view.frame.size.width, messageViewController.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
-    
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-    // move on screen
-    
-    [messageViewController.view setFrame:CGRectMake(0, messageViewController.view.frame.origin.y, messageViewController.view.frame.size.width, messageViewController.view.frame.size.height)];
-    
-    [UIView commitAnimations];
-}   
-
--(void)messageFinishedPlaying
-{
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-    
-    // animate the message view out
-     [messageViewController.view setFrame:CGRectMake(0 - messageViewController.view.frame.size.width, messageViewController.view.frame.origin.y, messageViewController.view.frame.size.width, messageViewController.view.frame.size.height)];
-    
-     [UIView commitAnimations];
-    
-    
-}
 
 -(void)fetchWebViewsForRSSClips
 {

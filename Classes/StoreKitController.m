@@ -33,14 +33,14 @@
     [ [SKPaymentQueue defaultQueue] removeTransactionObserver: self];
  }
 
--(void)makePurchaseForProductID:(NSString *)productID  AndReturnTo:(id <StoreKitControllerDelegate>)delegateClass
+-(void)makePurchaseForProductID:(SKProduct *)product  AndReturnTo:(id <StoreKitControllerDelegate>)delegateClass
 {
      self.storeKitControllerDelegate = delegateClass;
     
     
     
     
-    SKPayment *payment = [SKPayment paymentWithProductIdentifier:productID];
+    SKPayment *payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
     
 }

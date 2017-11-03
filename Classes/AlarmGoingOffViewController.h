@@ -14,7 +14,6 @@
 #import "RSSClipBeingPlayedDelegate.h"
 #import "FetchMessagesService.h"
 #import "FetchRSSClipsService.h"
-#import "MessageViewViewController.h"
 #import "MessagePlayingDelegate.h"
 
 @interface AlarmGoingOffViewController : UIViewController <AlarmListenDelegate, 
@@ -37,7 +36,6 @@
     FetchRSSClipsService *rssService;    
                 CGRect originalArrowFrame;
                 
-                MessageViewViewController *messageViewController;
 	
 }
 

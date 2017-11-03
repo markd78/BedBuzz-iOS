@@ -25,7 +25,7 @@
 	
     // new request
     NSString *url = [NSString
-                     stringWithFormat:@"http://api.wunderground.com/api/%@/%@/q/%f,%f.json",
+                     stringWithFormat:@"https://api.wunderground.com/api/%@/%@/q/%f,%f.json",
                      API_KEY, FEATURES,
                      coordinate.latitude,
                      coordinate.longitude];

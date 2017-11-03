@@ -7,7 +7,7 @@
 //
 
 #import "GeneratingSpeechViewController.h"
-#import "iSpeechService.h"
+#import "AmazonPoly.h"
 #import "SoundDirector.h"
 #import "UserModel.h"
 #import "SpeakAlarmAppDelegate.h"
@@ -65,16 +65,16 @@
 	NSString *eveningString = [@"Good Evening " stringByAppendingString:nameOfUser];
 	
 	// generate the sounds	
-	iSpeechService *iSpeechService1 = [[iSpeechService alloc] init];
-	[iSpeechService1 startGenerateSpeech:morningString AndSaveToFileName:@"goodMorning.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
+	AmazonPoly *AmazonPoly1 = [[AmazonPoly alloc] init];
+	[AmazonPoly1 startGenerateSpeech:morningString AndSaveToFileName:@"goodMorning.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
 	//[neoSpeechService autorelease];
 	
-	iSpeechService *iSpeechService2 = [[iSpeechService alloc] init];
-	[iSpeechService2 startGenerateSpeech:afternoonString AndSaveToFileName:@"goodAfternoon.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
+	AmazonPoly *AmazonPoly2 = [[AmazonPoly alloc] init];
+	[AmazonPoly2 startGenerateSpeech:afternoonString AndSaveToFileName:@"goodAfternoon.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
 	//[neoSpeechService2 autorelease];
 	
-	iSpeechService *iSpeechService3  = [[iSpeechService alloc] init];
-	[iSpeechService3 startGenerateSpeech:eveningString AndSaveToFileName:@"goodEvening.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
+	AmazonPoly *AmazonPoly3  = [[AmazonPoly alloc] init];
+	[AmazonPoly3 startGenerateSpeech:eveningString AndSaveToFileName:@"goodEvening.mp3"  withVoice:@"ukenglishfemale" AndReturnTo:self];
 	//[neoSpeechService3 autorelease];
 	
 }

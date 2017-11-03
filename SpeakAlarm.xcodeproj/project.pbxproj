@@ -29,17 +29,14 @@
 		3E06C94714FB13EB00953CB4 /* SendErrorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E06C94514FB13EB00953CB4 /* SendErrorService.m */; };
 		3E0909C713EA0AE600FD5CB4 /* media in Resources */ = {isa = PBXBuildFile; fileRef = 3E0906A613EA0AE600FD5CB4 /* media */; };
 		3E090BB813EB534700FD5CB4 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E090BB613EB534700FD5CB4 /* ImagePickerViewController.m */; };
-		3E09118713F877C500FD5CB4 /* FacebookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09118613F877C500FD5CB4 /* FacebookModel.m */; };
 		3E0911CC13F8866400FD5CB4 /* GeneratingSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0911CA13F8866400FD5CB4 /* GeneratingSpeechViewController.m */; };
 		3E0911CD13F8866400FD5CB4 /* GeneratingSpeech.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0911CB13F8866400FD5CB4 /* GeneratingSpeech.xib */; };
 		3E0913DB13FDAB2400FD5CB4 /* facebook_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0913DA13FDAB2400FD5CB4 /* facebook_button.png */; };
-		3E09140A13FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09140813FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m */; };
 		3E09140B13FDAFCE00FD5CB4 /* SelectFriendsForMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E09140913FDAFCE00FD5CB4 /* SelectFriendsForMessage.xib */; };
 		3E09157A13FF36DC00FD5CB4 /* FacebookUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09157913FF36DC00FD5CB4 /* FacebookUser.m */; };
 		3E0915BB1400095500FD5CB4 /* FriendsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0915BA1400095500FD5CB4 /* FriendsListCell.xib */; };
 		3E0916D21406EBF500FD5CB4 /* FriendsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0916D11406EBF500FD5CB4 /* FriendsListCell.m */; };
 		3E0917901407203100FD5CB4 /* MessagingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09178F1407203100FD5CB4 /* MessagingModel.m */; };
-		3E0918311408103900FD5CB4 /* ComposeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09182F1408103900FD5CB4 /* ComposeMessageViewController.m */; };
 		3E0918321408103900FD5CB4 /* ComposeMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0918301408103900FD5CB4 /* ComposeMessage.xib */; };
 		3E091919140EEAA000FD5CB4 /* MessageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E091918140EEAA000FD5CB4 /* MessageVO.m */; };
 		3E091936140EF98C00FD5CB4 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E091935140EF98C00FD5CB4 /* Utilities.m */; };
@@ -81,7 +78,10 @@
 		3E194DED1598EA0400A24652 /* LevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E194DE71598EA0400A24652 /* LevelMeter.m */; };
 		3E194DF01598EB9F00A24652 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E194DEF1598EB9F00A24652 /* MeterTable.cpp */; };
 		3E194DF11598EB9F00A24652 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E194DEF1598EB9F00A24652 /* MeterTable.cpp */; };
-		3E1E38AC138A0DEE00B13B96 /* iSpeechService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E38AB138A0DEE00B13B96 /* iSpeechService.m */; };
+		3E2165561EC8DD7A00BD9A55 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2165521EC8DD7A00BD9A55 /* Bolts.framework */; };
+		3E2165571EC8DD7A00BD9A55 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2165531EC8DD7A00BD9A55 /* FBSDKCoreKit.framework */; };
+		3E2165581EC8DD7A00BD9A55 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2165541EC8DD7A00BD9A55 /* FBSDKLoginKit.framework */; };
+		3E2165591EC8DD7A00BD9A55 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2165551EC8DD7A00BD9A55 /* FBSDKShareKit.framework */; };
 		3E2A357E143E30A600BB2D64 /* RSSFeeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E2A357D143E30A600BB2D64 /* RSSFeeds.xib */; };
 		3E2A3597143F67C000BB2D64 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A3596143F67C000BB2D64 /* LoginService.m */; };
 		3E2A367C143FB83800BB2D64 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2A367B143FB83800BB2D64 /* StoreKit.framework */; };
@@ -132,8 +132,6 @@
 		3E59AE3514E35BAE0055B3BA /* Welcome2EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E59AE3314E35BAE0055B3BA /* Welcome2EnterNameViewController.m */; };
 		3E59AE3714E3695E0055B3BA /* iconcropped114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E59AE3614E3695E0055B3BA /* iconcropped114.png */; };
 		3E59AE3814E3695E0055B3BA /* iconcropped114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E59AE3614E3695E0055B3BA /* iconcropped114.png */; };
-		3E59AE3E14E429090055B3BA /* Welcome3EnableFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E59AE3D14E429080055B3BA /* Welcome3EnableFacebookViewController.m */; };
-		3E59AE3F14E429090055B3BA /* Welcome3EnableFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E59AE3D14E429080055B3BA /* Welcome3EnableFacebookViewController.m */; };
 		3E59D64D148B4B0B0080449B /* Star16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E59D64C148B4B0B0080449B /* Star16.png */; };
 		3E5C0E711218FACD0012F37C /* AlarmsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C0E701218FACD0012F37C /* AlarmsModel.m */; };
 		3E60F9D21483436D0001F5AE /* SubscribeToBedBuzz.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E60F9D11483436D0001F5AE /* SubscribeToBedBuzz.xib */; };
@@ -177,6 +175,8 @@
 		3E74E9641221A94F001A31C6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74E9631221A94F001A31C6 /* AudioToolbox.framework */; };
 		3E74E99F1221B933001A31C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74E99E1221B933001A31C6 /* MediaPlayer.framework */; };
 		3E79E5B01495E0AE004681B5 /* Talking Alarm Clock iPhone Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E79E5AF1495E0AE004681B5 /* Talking Alarm Clock iPhone Icon_57.png */; };
+		3E7ECB1A1EB52DD600521E2A /* AmazonPoly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ECB191EB52DD600521E2A /* AmazonPoly.m */; };
+		3E7ECB1B1EB52DD600521E2A /* AmazonPoly.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ECB191EB52DD600521E2A /* AmazonPoly.m */; };
 		3E7F0109144F6198005C34DD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7F0108144F6198005C34DD /* libz.dylib */; };
 		3E8946531597D291004C0868 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8946521597D291004C0868 /* OpenGLES.framework */; };
 		3E8946541597D29B004C0868 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8946521597D291004C0868 /* OpenGLES.framework */; };
@@ -190,35 +190,9 @@
 		3E8F52FB144B8AC00014D53F /* BuyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8F52F9144B8AC00014D53F /* BuyView.xib */; };
 		3E90CE4B1582787800AE1D19 /* AlarmGoingOff.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E90CE4A1582787800AE1D19 /* AlarmGoingOff.xib */; };
 		3E90CE4C1582C84D00AE1D19 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EC4E8C31580070900F91ECF /* MessageView.xib */; };
-		3E928A5114E8B2DA0046B689 /* RedirectingToFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E928A5014E8B2D70046B689 /* RedirectingToFacebookViewController.m */; };
-		3E928A5214E8B2DA0046B689 /* RedirectingToFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E928A5014E8B2D70046B689 /* RedirectingToFacebookViewController.m */; };
 		3E93A9E1145A221D002AC895 /* StoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93A9E0145A221D002AC895 /* StoreKitController.m */; };
 		3E9CE03614C337EF00BDD2F4 /* arrow_right_green_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9CE03514C337EF00BDD2F4 /* arrow_right_green_48.png */; };
 		3E9CE03714C337EF00BDD2F4 /* arrow_right_green_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9CE03514C337EF00BDD2F4 /* arrow_right_green_48.png */; };
-		3EA5D48F14E4429C006696C9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47814E4429C006696C9 /* Facebook.m */; };
-		3EA5D49014E4429C006696C9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47814E4429C006696C9 /* Facebook.m */; };
-		3EA5D49114E4429C006696C9 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5D47A14E4429C006696C9 /* FBDialog.bundle */; };
-		3EA5D49214E4429C006696C9 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5D47A14E4429C006696C9 /* FBDialog.bundle */; };
-		3EA5D49314E4429C006696C9 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47C14E4429C006696C9 /* FBDialog.m */; };
-		3EA5D49414E4429C006696C9 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47C14E4429C006696C9 /* FBDialog.m */; };
-		3EA5D49514E4429C006696C9 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47E14E4429C006696C9 /* FBLoginDialog.m */; };
-		3EA5D49614E4429C006696C9 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D47E14E4429C006696C9 /* FBLoginDialog.m */; };
-		3EA5D49714E4429C006696C9 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48014E4429C006696C9 /* FBRequest.m */; };
-		3EA5D49814E4429C006696C9 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48014E4429C006696C9 /* FBRequest.m */; };
-		3EA5D49914E4429C006696C9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48414E4429C006696C9 /* NSObject+SBJSON.m */; };
-		3EA5D49A14E4429C006696C9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48414E4429C006696C9 /* NSObject+SBJSON.m */; };
-		3EA5D49B14E4429C006696C9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48614E4429C006696C9 /* NSString+SBJSON.m */; };
-		3EA5D49C14E4429C006696C9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48614E4429C006696C9 /* NSString+SBJSON.m */; };
-		3EA5D49D14E4429C006696C9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48814E4429C006696C9 /* SBJSON.m */; };
-		3EA5D49E14E4429C006696C9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48814E4429C006696C9 /* SBJSON.m */; };
-		3EA5D49F14E4429C006696C9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48A14E4429C006696C9 /* SBJsonBase.m */; };
-		3EA5D4A014E4429C006696C9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48A14E4429C006696C9 /* SBJsonBase.m */; };
-		3EA5D4A114E4429C006696C9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48C14E4429C006696C9 /* SBJsonParser.m */; };
-		3EA5D4A214E4429C006696C9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48C14E4429C006696C9 /* SBJsonParser.m */; };
-		3EA5D4A314E4429C006696C9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48E14E4429C006696C9 /* SBJsonWriter.m */; };
-		3EA5D4A414E4429C006696C9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D48E14E4429C006696C9 /* SBJsonWriter.m */; };
-		3EA5D4AA14E44FEB006696C9 /* SendMessageWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D4A914E44FEA006696C9 /* SendMessageWizardViewController.m */; };
-		3EA5D4AB14E44FEB006696C9 /* SendMessageWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D4A914E44FEA006696C9 /* SendMessageWizardViewController.m */; };
 		3EA5D4B414E46E42006696C9 /* HelpScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D4B314E46E41006696C9 /* HelpScreenViewController.m */; };
 		3EA5D4B514E46E42006696C9 /* HelpScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5D4B314E46E41006696C9 /* HelpScreenViewController.m */; };
 		3EA9F85214E4965B005699FE /* changeSettingsImg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA9F85114E4965B005699FE /* changeSettingsImg-01.png */; };
@@ -244,8 +218,6 @@
 		3EC4E8C41580070900F91ECF /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EC4E8C31580070900F91ECF /* MessageView.xib */; };
 		3EC4E8C91580187F00F91ECF /* speechbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC4E8C81580187F00F91ECF /* speechbubble.png */; };
 		3EC4E8CA1580187F00F91ECF /* speechbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC4E8C81580187F00F91ECF /* speechbubble.png */; };
-		3EC4E8CD158026D600F91ECF /* MessageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4E8CC158026D600F91ECF /* MessageViewViewController.m */; };
-		3EC4E8CE158026D600F91ECF /* MessageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4E8CC158026D600F91ECF /* MessageViewViewController.m */; };
 		3EC7F17615659C960019A7B4 /* ShowStatusBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7F17515659C960019A7B4 /* ShowStatusBarCell.m */; };
 		3EC7F17715659C960019A7B4 /* ShowStatusBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7F17515659C960019A7B4 /* ShowStatusBarCell.m */; };
 		3EC7F17915659D380019A7B4 /* ShowStatusBarCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7F17815659D380019A7B4 /* ShowStatusBarCustomCell.xib */; };
@@ -388,16 +360,12 @@
 		3ED3822914913386001559BB /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3521F5134BD8E400018312 /* Theme.m */; };
 		3ED3822A14913386001559BB /* RootViewController_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3523E4134D51EF00018312 /* RootViewController_Old.m */; };
 		3ED3822B14913386001559BB /* DaysCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F5FE1360FF43007CD7A6 /* DaysCustomCell.m */; };
-		3ED3822C14913386001559BB /* iSpeechService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E38AB138A0DEE00B13B96 /* iSpeechService.m */; };
 		3ED3822D14913386001559BB /* VoiceSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09FB6313E353FB00FD5CB4 /* VoiceSettingsViewController.m */; };
 		3ED3822E14913386001559BB /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E090BB613EB534700FD5CB4 /* ImagePickerViewController.m */; };
-		3ED3823A14913386001559BB /* FacebookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09118613F877C500FD5CB4 /* FacebookModel.m */; };
 		3ED3823B14913386001559BB /* GeneratingSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0911CA13F8866400FD5CB4 /* GeneratingSpeechViewController.m */; };
-		3ED3823C14913386001559BB /* SelectFriendsForMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09140813FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m */; };
 		3ED3823D14913386001559BB /* FacebookUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09157913FF36DC00FD5CB4 /* FacebookUser.m */; };
 		3ED3823E14913386001559BB /* FriendsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0916D11406EBF500FD5CB4 /* FriendsListCell.m */; };
 		3ED3823F14913386001559BB /* MessagingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09178F1407203100FD5CB4 /* MessagingModel.m */; };
-		3ED3824014913386001559BB /* ComposeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09182F1408103900FD5CB4 /* ComposeMessageViewController.m */; };
 		3ED3824114913386001559BB /* MessageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E091918140EEAA000FD5CB4 /* MessageVO.m */; };
 		3ED3824314913386001559BB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E091935140EF98C00FD5CB4 /* Utilities.m */; };
 		3ED3824414913386001559BB /* FetchMessagesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A0DA91412B3DF005736E8 /* FetchMessagesService.m */; };
@@ -491,12 +459,7 @@
 		3EDC037614E31E8E0099E4D0 /* Welcome1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC037414E31E8E0099E4D0 /* Welcome1ViewController.m */; };
 		3EE108CC18F9BEC2002B50EE /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE108CB18F9BEC2002B50EE /* libFlurry_4.4.0.a */; };
 		3EE108CE18F9BF1C002B50EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE108CD18F9BF1C002B50EE /* Security.framework */; };
-		3EE108D618F9C12D002B50EE /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE108D118F9C12D002B50EE /* RECommonFunctions.m */; };
-		3EE108D718F9C12D002B50EE /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE108D318F9C12D002B50EE /* RESideMenu.m */; };
-		3EE108D818F9C12D002B50EE /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE108D518F9C12D002B50EE /* UIViewController+RESideMenu.m */; };
 		3EE108DA18F9C15B002B50EE /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE108D918F9C15B002B50EE /* iPhoneStoryboard.storyboard */; };
-		3EE108DE18F9C26A002B50EE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE108DD18F9C26A002B50EE /* RootViewController.m */; };
-		3EE108DF18F9C26A002B50EE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE108DD18F9C26A002B50EE /* RootViewController.m */; };
 		3EEB841414EED850001423A5 /* FirstScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB841314EED850001423A5 /* FirstScreen.xib */; };
 		3EEB841614EED882001423A5 /* FirstScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB841514EED882001423A5 /* FirstScreen.xib */; };
 		3EEB841814EF3DC7001423A5 /* HelperScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB841714EF3DC7001423A5 /* HelperScreen.xib */; };
@@ -517,6 +480,7 @@
 		3EFA4F9E14EEC9070093C158 /* Welcome3EnableFacebook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EFA4F9814EEC9070093C158 /* Welcome3EnableFacebook.xib */; };
 		3EFA4F9F14EEC9070093C158 /* Welcome4SendMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EFA4F9914EEC9070093C158 /* Welcome4SendMessage.xib */; };
 		3EFEC1E01634C28F00EE3A54 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEC1DF1634C28F00EE3A54 /* Default-568h@2x.png */; };
+		61F51A869BC0F16D25E7CEA0 /* Pods_SpeakAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090FD0EAAC805A0E7C62724 /* Pods_SpeakAlarm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -525,11 +489,13 @@
 		1D3623250D0F684500981E51 /* SpeakAlarmAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakAlarmAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* BedBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2258832979C6FC2C49A3B4A6 /* Pods-SpeakAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakAlarm/Pods-SpeakAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.frameworks; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* SpeakAlarm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakAlarm_Prefix.pch; sourceTree = "<group>"; };
+		3C8E4D945237440E04E3AD4C /* Pods-SpeakAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakAlarm/Pods-SpeakAlarm.release.xcconfig"; sourceTree = "<group>"; };
 		3E0373791488297D004A3076 /* GetUnreadMessageCountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUnreadMessageCountService.h; sourceTree = "<group>"; };
 		3E03737A1488297E004A3076 /* GetUnreadMessageCountService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUnreadMessageCountService.m; sourceTree = "<group>"; };
 		3E03737C14883736004A3076 /* GetUnreadMessagesCountDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUnreadMessagesCountDelegate.h; sourceTree = "<group>"; };
@@ -553,17 +519,11 @@
 		3E090BB513EB534700FD5CB4 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
 		3E090BB613EB534700FD5CB4 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
 		3E09112013F6175C00FD5CB4 /* LoginWithFacebook.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginWithFacebook.xib; path = Classes/LoginWithFacebook.xib; sourceTree = "<group>"; };
-		3E09118513F877C500FD5CB4 /* FacebookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookModel.h; sourceTree = "<group>"; };
-		3E09118613F877C500FD5CB4 /* FacebookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookModel.m; sourceTree = "<group>"; };
 		3E0911C913F8866400FD5CB4 /* GeneratingSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratingSpeechViewController.h; sourceTree = "<group>"; };
 		3E0911CA13F8866400FD5CB4 /* GeneratingSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratingSpeechViewController.m; sourceTree = "<group>"; };
 		3E0911CB13F8866400FD5CB4 /* GeneratingSpeech.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneratingSpeech.xib; path = Classes/GeneratingSpeech.xib; sourceTree = "<group>"; };
 		3E0913DA13FDAB2400FD5CB4 /* facebook_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_button.png; sourceTree = "<group>"; };
-		3E09140713FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFriendsForMessageViewController.h; sourceTree = "<group>"; };
-		3E09140813FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFriendsForMessageViewController.m; sourceTree = "<group>"; };
 		3E09140913FDAFCE00FD5CB4 /* SelectFriendsForMessage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SelectFriendsForMessage.xib; path = Classes/SelectFriendsForMessage.xib; sourceTree = "<group>"; };
-		3E09143C13FDD3EF00FD5CB4 /* FacebookLoggedInDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookLoggedInDelegate.h; sourceTree = "<group>"; };
-		3E09144C13FDD76800FD5CB4 /* FacebookGotUserNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookGotUserNameDelegate.h; sourceTree = "<group>"; };
 		3E09157813FF36DC00FD5CB4 /* FacebookUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookUser.h; sourceTree = "<group>"; };
 		3E09157913FF36DC00FD5CB4 /* FacebookUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookUser.m; sourceTree = "<group>"; };
 		3E0915BA1400095500FD5CB4 /* FriendsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListCell.xib; sourceTree = "<group>"; };
@@ -571,8 +531,6 @@
 		3E0916D11406EBF500FD5CB4 /* FriendsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListCell.m; sourceTree = "<group>"; };
 		3E09178E1407203100FD5CB4 /* MessagingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingModel.h; sourceTree = "<group>"; };
 		3E09178F1407203100FD5CB4 /* MessagingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingModel.m; sourceTree = "<group>"; };
-		3E09182E1408103800FD5CB4 /* ComposeMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeMessageViewController.h; sourceTree = "<group>"; };
-		3E09182F1408103900FD5CB4 /* ComposeMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeMessageViewController.m; sourceTree = "<group>"; };
 		3E0918301408103900FD5CB4 /* ComposeMessage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ComposeMessage.xib; path = Classes/ComposeMessage.xib; sourceTree = "<group>"; };
 		3E091917140EEAA000FD5CB4 /* MessageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVO.h; sourceTree = "<group>"; };
 		3E091918140EEAA000FD5CB4 /* MessageVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVO.m; sourceTree = "<group>"; };
@@ -631,8 +589,10 @@
 		3E194DE71598EA0400A24652 /* LevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelMeter.m; sourceTree = "<group>"; };
 		3E194DEE1598EB9F00A24652 /* MeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterTable.h; sourceTree = "<group>"; };
 		3E194DEF1598EB9F00A24652 /* MeterTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeterTable.cpp; sourceTree = "<group>"; };
-		3E1E38AA138A0DEE00B13B96 /* iSpeechService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpeechService.h; sourceTree = "<group>"; };
-		3E1E38AB138A0DEE00B13B96 /* iSpeechService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSpeechService.m; sourceTree = "<group>"; };
+		3E2165521EC8DD7A00BD9A55 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		3E2165531EC8DD7A00BD9A55 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3E2165541EC8DD7A00BD9A55 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		3E2165551EC8DD7A00BD9A55 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		3E2A33071436298F00BB2D64 /* RSSClipBeingPlayedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSClipBeingPlayedDelegate.h; sourceTree = "<group>"; };
 		3E2A357D143E30A600BB2D64 /* RSSFeeds.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSFeeds.xib; sourceTree = "<group>"; };
 		3E2A3595143F67C000BB2D64 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
@@ -679,7 +639,6 @@
 		3E42B7E01470C87F002E4D1B /* palms@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "palms@2x.jpg"; sourceTree = "<group>"; };
 		3E42B7E11470C87F002E4D1B /* sunrise@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunrise@2x.jpg"; sourceTree = "<group>"; };
 		3E42B7E21470C87F002E4D1B /* sunrise2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunrise2@2x.jpg"; sourceTree = "<group>"; };
-		3E42B7E6147A1CDF002E4D1B /* FacebookGotFriendsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookGotFriendsDelegate.h; sourceTree = "<group>"; };
 		3E42B7ED1481CF14002E4D1B /* facebook-login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login-button.png"; sourceTree = "<group>"; };
 		3E42B7F01481D1C6002E4D1B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3E42B7F11481D1C6002E4D1B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
@@ -700,8 +659,6 @@
 		3E59AE3214E35BAE0055B3BA /* Welcome2EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome2EnterNameViewController.h; sourceTree = "<group>"; };
 		3E59AE3314E35BAE0055B3BA /* Welcome2EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome2EnterNameViewController.m; sourceTree = "<group>"; };
 		3E59AE3614E3695E0055B3BA /* iconcropped114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconcropped114.png; sourceTree = "<group>"; };
-		3E59AE3C14E429080055B3BA /* Welcome3EnableFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome3EnableFacebookViewController.h; sourceTree = "<group>"; };
-		3E59AE3D14E429080055B3BA /* Welcome3EnableFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome3EnableFacebookViewController.m; sourceTree = "<group>"; };
 		3E59AE4014E42AD30055B3BA /* WizardAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardAnimationDelegate.h; sourceTree = "<group>"; };
 		3E59D64C148B4B0B0080449B /* Star16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star16.png; sourceTree = "<group>"; };
 		3E5C0E6F1218FACD0012F37C /* AlarmsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsModel.h; sourceTree = "<group>"; };
@@ -771,6 +728,8 @@
 		3E74E99E1221B933001A31C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3E78760715796FE1001FE9A7 /* WeatherSpeechGeneratedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherSpeechGeneratedDelegate.h; sourceTree = "<group>"; };
 		3E79E5AF1495E0AE004681B5 /* Talking Alarm Clock iPhone Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Talking Alarm Clock iPhone Icon_57.png"; sourceTree = "<group>"; };
+		3E7ECB181EB52DD600521E2A /* AmazonPoly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPoly.h; sourceTree = "<group>"; };
+		3E7ECB191EB52DD600521E2A /* AmazonPoly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPoly.m; sourceTree = "<group>"; };
 		3E7F0108144F6198005C34DD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3E8946521597D291004C0868 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		3E8946551597D32A004C0868 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -782,39 +741,11 @@
 		3E8F52F8144B8AC00014D53F /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
 		3E8F52F9144B8AC00014D53F /* BuyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BuyView.xib; path = Classes/BuyView.xib; sourceTree = "<group>"; };
 		3E90CE4A1582787800AE1D19 /* AlarmGoingOff.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmGoingOff.xib; sourceTree = "<group>"; };
-		3E928A4F14E8B2D60046B689 /* RedirectingToFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedirectingToFacebookViewController.h; sourceTree = "<group>"; };
-		3E928A5014E8B2D70046B689 /* RedirectingToFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedirectingToFacebookViewController.m; sourceTree = "<group>"; };
 		3E93A9DE1459D974002AC895 /* PaymentServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentServiceDelegate.h; sourceTree = "<group>"; };
 		3E93A9DF145A221D002AC895 /* StoreKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreKitController.h; sourceTree = "<group>"; };
 		3E93A9E0145A221D002AC895 /* StoreKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreKitController.m; sourceTree = "<group>"; };
 		3E93A9E3145A2584002AC895 /* StoreKitControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreKitControllerDelegate.h; sourceTree = "<group>"; };
 		3E9CE03514C337EF00BDD2F4 /* arrow_right_green_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right_green_48.png; sourceTree = "<group>"; };
-		3EA5D47614E4429C006696C9 /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = facebook_ios_sdk_Prefix.pch; path = "../../facebook-ios-sdk/src/facebook_ios_sdk_Prefix.pch"; sourceTree = "<group>"; };
-		3EA5D47714E4429C006696C9 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facebook.h; path = "../../facebook-ios-sdk/src/Facebook.h"; sourceTree = "<group>"; };
-		3EA5D47814E4429C006696C9 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facebook.m; path = "../../facebook-ios-sdk/src/Facebook.m"; sourceTree = "<group>"; };
-		3EA5D47914E4429C006696C9 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "../../facebook-ios-sdk/src/FBConnect.h"; sourceTree = "<group>"; };
-		3EA5D47A14E4429C006696C9 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBDialog.bundle; path = "../../facebook-ios-sdk/src/FBDialog.bundle"; sourceTree = "<group>"; };
-		3EA5D47B14E4429C006696C9 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "../../facebook-ios-sdk/src/FBDialog.h"; sourceTree = "<group>"; };
-		3EA5D47C14E4429C006696C9 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "../../facebook-ios-sdk/src/FBDialog.m"; sourceTree = "<group>"; };
-		3EA5D47D14E4429C006696C9 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "../../facebook-ios-sdk/src/FBLoginDialog.h"; sourceTree = "<group>"; };
-		3EA5D47E14E4429C006696C9 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "../../facebook-ios-sdk/src/FBLoginDialog.m"; sourceTree = "<group>"; };
-		3EA5D47F14E4429C006696C9 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "../../facebook-ios-sdk/src/FBRequest.h"; sourceTree = "<group>"; };
-		3EA5D48014E4429C006696C9 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "../../facebook-ios-sdk/src/FBRequest.m"; sourceTree = "<group>"; };
-		3EA5D48214E4429C006696C9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		3EA5D48314E4429C006696C9 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		3EA5D48414E4429C006696C9 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		3EA5D48514E4429C006696C9 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		3EA5D48614E4429C006696C9 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		3EA5D48714E4429C006696C9 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		3EA5D48814E4429C006696C9 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
-		3EA5D48914E4429C006696C9 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		3EA5D48A14E4429C006696C9 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		3EA5D48B14E4429C006696C9 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		3EA5D48C14E4429C006696C9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		3EA5D48D14E4429C006696C9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		3EA5D48E14E4429C006696C9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		3EA5D4A814E44FEA006696C9 /* SendMessageWizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageWizardViewController.h; sourceTree = "<group>"; };
-		3EA5D4A914E44FEA006696C9 /* SendMessageWizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageWizardViewController.m; sourceTree = "<group>"; };
 		3EA5D4B214E46E41006696C9 /* HelpScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpScreenViewController.h; sourceTree = "<group>"; };
 		3EA5D4B314E46E41006696C9 /* HelpScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpScreenViewController.m; sourceTree = "<group>"; };
 		3EA9F84A14E47E19005699FE /* HelpScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpScreenDelegate.h; sourceTree = "<group>"; };
@@ -839,8 +770,6 @@
 		3EC4E8C2157FF88100F91ECF /* MessagePlayingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePlayingDelegate.h; sourceTree = "<group>"; };
 		3EC4E8C31580070900F91ECF /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		3EC4E8C81580187F00F91ECF /* speechbubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble.png; sourceTree = "<group>"; };
-		3EC4E8CB158026D600F91ECF /* MessageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewViewController.h; sourceTree = "<group>"; };
-		3EC4E8CC158026D600F91ECF /* MessageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewViewController.m; sourceTree = "<group>"; };
 		3EC7F17415659C960019A7B4 /* ShowStatusBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowStatusBarCell.h; sourceTree = "<group>"; };
 		3EC7F17515659C960019A7B4 /* ShowStatusBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowStatusBarCell.m; sourceTree = "<group>"; };
 		3EC7F17815659D380019A7B4 /* ShowStatusBarCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowStatusBarCustomCell.xib; sourceTree = "<group>"; };
@@ -971,15 +900,7 @@
 		3EE108CA18F9BEC2002B50EE /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		3EE108CB18F9BEC2002B50EE /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		3EE108CD18F9BF1C002B50EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		3EE108D018F9C12D002B50EE /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
-		3EE108D118F9C12D002B50EE /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
-		3EE108D218F9C12D002B50EE /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
-		3EE108D318F9C12D002B50EE /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
-		3EE108D418F9C12D002B50EE /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		3EE108D518F9C12D002B50EE /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		3EE108D918F9C15B002B50EE /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
-		3EE108DC18F9C26A002B50EE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		3EE108DD18F9C26A002B50EE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		3EEB841314EED850001423A5 /* FirstScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstScreen.xib; sourceTree = "<group>"; };
 		3EEB841514EED882001423A5 /* FirstScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstScreen.xib; path = "Resources-iPad/FirstScreen.xib"; sourceTree = "<group>"; };
 		3EEB841714EF3DC7001423A5 /* HelperScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelperScreen.xib; path = "Resources-iPad/HelperScreen.xib"; sourceTree = "<group>"; };
@@ -1001,6 +922,7 @@
 		3EFA4F9914EEC9070093C158 /* Welcome4SendMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Welcome4SendMessage.xib; path = "Resources-iPad/Welcome4SendMessage.xib"; sourceTree = "<group>"; };
 		3EFEC1DF1634C28F00EE3A54 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SpeakAlarm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeakAlarm-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B090FD0EAAC805A0E7C62724 /* Pods_SpeakAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1020,14 +942,19 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				3E74E9641221A94F001A31C6 /* AudioToolbox.framework in Frameworks */,
+				3E2165591EC8DD7A00BD9A55 /* FBSDKShareKit.framework in Frameworks */,
 				3E74E99F1221B933001A31C6 /* MediaPlayer.framework in Frameworks */,
 				3EC9C3F8132F313C00D61125 /* CoreLocation.framework in Frameworks */,
+				3E2165581EC8DD7A00BD9A55 /* FBSDKLoginKit.framework in Frameworks */,
 				3EC9C535132FDF5F00D61125 /* CFNetwork.framework in Frameworks */,
 				3EC9C53E132FDF9600D61125 /* SystemConfiguration.framework in Frameworks */,
 				3EE108CC18F9BEC2002B50EE /* libFlurry_4.4.0.a in Frameworks */,
 				3EC9C540132FDFA500D61125 /* MobileCoreServices.framework in Frameworks */,
 				3E0A16A9133DB9AD00CF4078 /* AVFoundation.framework in Frameworks */,
+				3E2165561EC8DD7A00BD9A55 /* Bolts.framework in Frameworks */,
+				3E2165571EC8DD7A00BD9A55 /* FBSDKCoreKit.framework in Frameworks */,
 				3E2A367C143FB83800BB2D64 /* StoreKit.framework in Frameworks */,
+				61F51A869BC0F16D25E7CEA0 /* Pods_SpeakAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,13 +1023,12 @@
 				3EAAA93C19B903C70097DB5D /* Reachability.m */,
 				3EE108C918F9BEC2002B50EE /* Flurry */,
 				3EFEC1DF1634C28F00EE3A54 /* Default-568h@2x.png */,
-				3EE108CF18F9C12D002B50EE /* RESideMenu */,
 				3E681F0014E2E3AE00A98386 /* rs-SDWebImage-b207dcc */,
-				3E9CE03814C3658200BDD2F4 /* FBConnect */,
 				3EEF153014960BA6005080C6 /* Talking Alarm Clock iPhone Icon_72.png */,
 				3E79E5AF1495E0AE004681B5 /* Talking Alarm Clock iPhone Icon_57.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				8D1107310486CEB800E47090 /* SpeakAlarm-Info.plist */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				3E20A1F514D875F100CFC14C /* New Group */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -1120,6 +1046,7 @@
 				3E09FB5D13E338D600FD5CB4 /* VoicesSettings.xib */,
 				3EE108D918F9C15B002B50EE /* iPhoneStoryboard.storyboard */,
 				3ED3829B14913387001559BB /* SpeakAlarm copy-Info.plist */,
+				D45A26265B99DC2B45416752 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1160,7 +1087,6 @@
 				3EC973AD120E5DFD008509F9 /* Clock.xib */,
 				3EC97412120E7D78008509F9 /* AlarmSettings.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* SpeakAlarm-Info.plist */,
 				3E3521B6134ACEF900018312 /* ThemeListCustomCell.xib */,
 				3E0915BA1400095500FD5CB4 /* FriendsListCell.xib */,
 				3E6CDAE6142A4C3A00F4723B /* RSSCellRenderer.xib */,
@@ -1184,6 +1110,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E2165521EC8DD7A00BD9A55 /* Bolts.framework */,
+				3E2165531EC8DD7A00BD9A55 /* FBSDKCoreKit.framework */,
+				3E2165541EC8DD7A00BD9A55 /* FBSDKLoginKit.framework */,
+				3E2165551EC8DD7A00BD9A55 /* FBSDKShareKit.framework */,
 				3EE108CD18F9BF1C002B50EE /* Security.framework */,
 				3E8946551597D32A004C0868 /* CoreFoundation.framework */,
 				3E8946521597D291004C0868 /* OpenGLES.framework */,
@@ -1206,6 +1136,7 @@
 				3EC9C53D132FDF9600D61125 /* SystemConfiguration.framework */,
 				3EC9C53F132FDFA500D61125 /* MobileCoreServices.framework */,
 				3E0A16A8133DB9AD00CF4078 /* AVFoundation.framework */,
+				B090FD0EAAC805A0E7C62724 /* Pods_SpeakAlarm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1217,28 +1148,6 @@
 				3E06C94514FB13EB00953CB4 /* SendErrorService.m */,
 			);
 			name = ErrorService;
-			sourceTree = "<group>";
-		};
-		3E09143F13FDD53100FD5CB4 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				3E09143C13FDD3EF00FD5CB4 /* FacebookLoggedInDelegate.h */,
-				3E09118513F877C500FD5CB4 /* FacebookModel.h */,
-				3E09118613F877C500FD5CB4 /* FacebookModel.m */,
-				3E09144C13FDD76800FD5CB4 /* FacebookGotUserNameDelegate.h */,
-				3E42B7E6147A1CDF002E4D1B /* FacebookGotFriendsDelegate.h */,
-			);
-			name = Facebook;
-			sourceTree = "<group>";
-		};
-		3E09192B140EF46700FD5CB4 /* iSpeech */ = {
-			isa = PBXGroup;
-			children = (
-				3E0A1A3C13413E7C00CF4078 /* SpeechGeneratedDelegate.h */,
-				3E1E38AA138A0DEE00B13B96 /* iSpeechService.h */,
-				3E1E38AB138A0DEE00B13B96 /* iSpeechService.m */,
-			);
-			name = iSpeech;
 			sourceTree = "<group>";
 		};
 		3E09192C140EF47500FD5CB4 /* MessagingService */ = {
@@ -1306,6 +1215,7 @@
 		3E0A18C41340140200CF4078 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3E7ECB121EB52BD500521E2A /* AmazonPoly */,
 				3EAAA93219B8FCDD0097DB5D /* WeatherService */,
 				3E1137BB1566B4BF0093207A /* ReviewCodeService */,
 				3E06C94314FB13BC00953CB4 /* ErrorService */,
@@ -1314,7 +1224,6 @@
 				3E2A3594143F66B000BB2D64 /* UserService */,
 				3E6CDA141424F8EC00F4723B /* RSSService */,
 				3E09192C140EF47500FD5CB4 /* MessagingService */,
-				3E09192B140EF46700FD5CB4 /* iSpeech */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -1489,44 +1398,14 @@
 			name = Themes;
 			sourceTree = "<group>";
 		};
-		3E9CE03814C3658200BDD2F4 /* FBConnect */ = {
+		3E7ECB121EB52BD500521E2A /* AmazonPoly */ = {
 			isa = PBXGroup;
 			children = (
-				3EA5D47614E4429C006696C9 /* facebook_ios_sdk_Prefix.pch */,
-				3EA5D47714E4429C006696C9 /* Facebook.h */,
-				3EA5D47814E4429C006696C9 /* Facebook.m */,
-				3EA5D47914E4429C006696C9 /* FBConnect.h */,
-				3EA5D47A14E4429C006696C9 /* FBDialog.bundle */,
-				3EA5D47B14E4429C006696C9 /* FBDialog.h */,
-				3EA5D47C14E4429C006696C9 /* FBDialog.m */,
-				3EA5D47D14E4429C006696C9 /* FBLoginDialog.h */,
-				3EA5D47E14E4429C006696C9 /* FBLoginDialog.m */,
-				3EA5D47F14E4429C006696C9 /* FBRequest.h */,
-				3EA5D48014E4429C006696C9 /* FBRequest.m */,
-				3EA5D48114E4429C006696C9 /* JSON */,
+				3E0A1A3C13413E7C00CF4078 /* SpeechGeneratedDelegate.h */,
+				3E7ECB181EB52DD600521E2A /* AmazonPoly.h */,
+				3E7ECB191EB52DD600521E2A /* AmazonPoly.m */,
 			);
-			path = FBConnect;
-			sourceTree = "<group>";
-		};
-		3EA5D48114E4429C006696C9 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				3EA5D48214E4429C006696C9 /* JSON.h */,
-				3EA5D48314E4429C006696C9 /* NSObject+SBJSON.h */,
-				3EA5D48414E4429C006696C9 /* NSObject+SBJSON.m */,
-				3EA5D48514E4429C006696C9 /* NSString+SBJSON.h */,
-				3EA5D48614E4429C006696C9 /* NSString+SBJSON.m */,
-				3EA5D48714E4429C006696C9 /* SBJSON.h */,
-				3EA5D48814E4429C006696C9 /* SBJSON.m */,
-				3EA5D48914E4429C006696C9 /* SBJsonBase.h */,
-				3EA5D48A14E4429C006696C9 /* SBJsonBase.m */,
-				3EA5D48B14E4429C006696C9 /* SBJsonParser.h */,
-				3EA5D48C14E4429C006696C9 /* SBJsonParser.m */,
-				3EA5D48D14E4429C006696C9 /* SBJsonWriter.h */,
-				3EA5D48E14E4429C006696C9 /* SBJsonWriter.m */,
-			);
-			name = JSON;
-			path = "../../facebook-ios-sdk/src/JSON";
+			name = AmazonPoly;
 			sourceTree = "<group>";
 		};
 		3EAAA93219B8FCDD0097DB5D /* WeatherService */ = {
@@ -1651,7 +1530,6 @@
 			isa = PBXGroup;
 			children = (
 				3E31B7561450837800DD0B23 /* StoreKit */,
-				3E09143F13FDD53100FD5CB4 /* Facebook */,
 				3EC9C3E5132F2F2700D61125 /* LocationUpdateDelegate.h */,
 				3E5C0E6F1218FACD0012F37C /* AlarmsModel.h */,
 				3E5C0E701218FACD0012F37C /* AlarmsModel.m */,
@@ -1733,7 +1611,6 @@
 		3EC9CC4D13380CE100D61125 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3EE108DB18F9C1CF002B50EE /* NewViews */,
 				3EDC037714E31E940099E4D0 /* Wizard */,
 				3E0A16B1133E4ECA00CF4078 /* Settings */,
 				3EC973AB120E5DFD008509F9 /* ClockViewController.h */,
@@ -1746,10 +1623,6 @@
 				3E3523E4134D51EF00018312 /* RootViewController_Old.m */,
 				3E0911C913F8866400FD5CB4 /* GeneratingSpeechViewController.h */,
 				3E0911CA13F8866400FD5CB4 /* GeneratingSpeechViewController.m */,
-				3E09140713FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.h */,
-				3E09140813FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m */,
-				3E09182E1408103800FD5CB4 /* ComposeMessageViewController.h */,
-				3E09182F1408103900FD5CB4 /* ComposeMessageViewController.m */,
 				3E2A33071436298F00BB2D64 /* RSSClipBeingPlayedDelegate.h */,
 				3E8F52F7144B8AC00014D53F /* BuyViewController.h */,
 				3E8F52F8144B8AC00014D53F /* BuyViewController.m */,
@@ -1847,19 +1720,11 @@
 				3E59AE2E14E359C40055B3BA /* WizardDelegate.h */,
 				3E59AE3214E35BAE0055B3BA /* Welcome2EnterNameViewController.h */,
 				3E59AE3314E35BAE0055B3BA /* Welcome2EnterNameViewController.m */,
-				3E59AE3C14E429080055B3BA /* Welcome3EnableFacebookViewController.h */,
-				3E59AE3D14E429080055B3BA /* Welcome3EnableFacebookViewController.m */,
 				3E59AE4014E42AD30055B3BA /* WizardAnimationDelegate.h */,
-				3EA5D4A814E44FEA006696C9 /* SendMessageWizardViewController.h */,
-				3EA5D4A914E44FEA006696C9 /* SendMessageWizardViewController.m */,
-				3E928A4F14E8B2D60046B689 /* RedirectingToFacebookViewController.h */,
-				3E928A5014E8B2D70046B689 /* RedirectingToFacebookViewController.m */,
 				3E12DE5D156AB48E0008A717 /* ChangeVoiceQuestionViewController.h */,
 				3E12DE5E156AB48E0008A717 /* ChangeVoiceQuestionViewController.m */,
 				3ECF8847156B05DE0012861F /* SubscribeQuestionViewController.h */,
 				3ECF8848156B05DE0012861F /* SubscribeQuestionViewController.m */,
-				3EC4E8CB158026D600F91ECF /* MessageViewViewController.h */,
-				3EC4E8CC158026D600F91ECF /* MessageViewViewController.m */,
 			);
 			name = Wizard;
 			sourceTree = "<group>";
@@ -1871,29 +1736,6 @@
 				3EE108CB18F9BEC2002B50EE /* libFlurry_4.4.0.a */,
 			);
 			path = Flurry;
-			sourceTree = "<group>";
-		};
-		3EE108CF18F9C12D002B50EE /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				3EE108D018F9C12D002B50EE /* RECommonFunctions.h */,
-				3EE108D118F9C12D002B50EE /* RECommonFunctions.m */,
-				3EE108D218F9C12D002B50EE /* RESideMenu.h */,
-				3EE108D318F9C12D002B50EE /* RESideMenu.m */,
-				3EE108D418F9C12D002B50EE /* UIViewController+RESideMenu.h */,
-				3EE108D518F9C12D002B50EE /* UIViewController+RESideMenu.m */,
-			);
-			name = RESideMenu;
-			path = "../../../Downloads/RESideMenu-master/RESideMenu";
-			sourceTree = "<group>";
-		};
-		3EE108DB18F9C1CF002B50EE /* NewViews */ = {
-			isa = PBXGroup;
-			children = (
-				3EE108DC18F9C26A002B50EE /* RootViewController.h */,
-				3EE108DD18F9C26A002B50EE /* RootViewController.m */,
-			);
-			name = NewViews;
 			sourceTree = "<group>";
 		};
 		3EFA4F8714EEC8410093C158 /* WelcomeWizard */ = {
@@ -1911,6 +1753,15 @@
 			name = WelcomeWizard;
 			sourceTree = "<group>";
 		};
+		D45A26265B99DC2B45416752 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2258832979C6FC2C49A3B4A6 /* Pods-SpeakAlarm.debug.xcconfig */,
+				3C8E4D945237440E04E3AD4C /* Pods-SpeakAlarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1918,9 +1769,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeakAlarm" */;
 			buildPhases = (
+				CFB85A5EB4F321956F6F3AB5 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				C6830F7F2CD2ACE810F75463 /* [CP] Embed Pods Frameworks */,
+				9A9274D4C9677EDC606FD1C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1959,6 +1813,11 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = THQVB4FLJ2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					3ED381A814913386001559BB = {
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -1973,6 +1832,7 @@
 				German,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2072,7 +1932,6 @@
 				3E9CE03614C337EF00BDD2F4 /* arrow_right_green_48.png in Resources */,
 				3E681F3414E2E88200A98386 /* placeholder.png in Resources */,
 				3E59AE3714E3695E0055B3BA /* iconcropped114.png in Resources */,
-				3EA5D49114E4429C006696C9 /* FBDialog.bundle in Resources */,
 				3EA9F85214E4965B005699FE /* changeSettingsImg-01.png in Resources */,
 				3EA9F85514E49932005699FE /* sendMessageImg-01.png in Resources */,
 				3EA9F85E14E49B6C005699FE /* hearTimeImg.png in Resources */,
@@ -2197,7 +2056,6 @@
 				3E9CE03714C337EF00BDD2F4 /* arrow_right_green_48.png in Resources */,
 				3E681F3514E2E88200A98386 /* placeholder.png in Resources */,
 				3E59AE3814E3695E0055B3BA /* iconcropped114.png in Resources */,
-				3EA5D49214E4429C006696C9 /* FBDialog.bundle in Resources */,
 				3EA9F85314E4965B005699FE /* changeSettingsImg-01.png in Resources */,
 				3EA9F85614E49932005699FE /* sendMessageImg-01.png in Resources */,
 				3EA9F85F14E49B6C005699FE /* hearTimeImg.png in Resources */,
@@ -2220,6 +2078,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A9274D4C9677EDC606FD1C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakAlarm/Pods-SpeakAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6830F7F2CD2ACE810F75463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakAlarm/Pods-SpeakAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB85A5EB4F321956F6F3AB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -2254,6 +2160,7 @@
 				3E0A1711133EB71200CF4078 /* UserModel.m in Sources */,
 				3E0A17F5133EE17900CF4078 /* TemperatureUnitTableViewController.m in Sources */,
 				3E0A1C5C134184FB00CF4078 /* MKLocalNotificationsScheduler.m in Sources */,
+				3E7ECB1A1EB52DD600521E2A /* AmazonPoly.m in Sources */,
 				3E351DC9134949E400018312 /* SnoozeLengthCell.m in Sources */,
 				3E351E4513496B9F00018312 /* TemperatureScaleCustomCell.m in Sources */,
 				3E351F8A134A62CB00018312 /* GreetWithNameCell.m in Sources */,
@@ -2263,16 +2170,12 @@
 				3E3521F6134BD8E400018312 /* Theme.m in Sources */,
 				3E3523E6134D51EF00018312 /* RootViewController_Old.m in Sources */,
 				3E64F5FF1360FF43007CD7A6 /* DaysCustomCell.m in Sources */,
-				3E1E38AC138A0DEE00B13B96 /* iSpeechService.m in Sources */,
 				3E09FB6413E353FB00FD5CB4 /* VoiceSettingsViewController.m in Sources */,
 				3E090BB813EB534700FD5CB4 /* ImagePickerViewController.m in Sources */,
-				3E09118713F877C500FD5CB4 /* FacebookModel.m in Sources */,
 				3E0911CC13F8866400FD5CB4 /* GeneratingSpeechViewController.m in Sources */,
-				3E09140A13FDAFCE00FD5CB4 /* SelectFriendsForMessageViewController.m in Sources */,
 				3E09157A13FF36DC00FD5CB4 /* FacebookUser.m in Sources */,
 				3E0916D21406EBF500FD5CB4 /* FriendsListCell.m in Sources */,
 				3E0917901407203100FD5CB4 /* MessagingModel.m in Sources */,
-				3E0918311408103900FD5CB4 /* ComposeMessageViewController.m in Sources */,
 				3E091919140EEAA000FD5CB4 /* MessageVO.m in Sources */,
 				3E091936140EF98C00FD5CB4 /* Utilities.m in Sources */,
 				3E6A0DAA1412B3DF005736E8 /* FetchMessagesService.m in Sources */,
@@ -2292,8 +2195,6 @@
 				3E93A9E1145A221D002AC895 /* StoreKitController.m in Sources */,
 				3E6D42E9146446BA00E6AD11 /* RecentlyUsedMesageRecipient.m in Sources */,
 				3E6D42ED1464838B00E6AD11 /* iToast.m in Sources */,
-				3EE108D618F9C12D002B50EE /* RECommonFunctions.m in Sources */,
-				3EE108D718F9C12D002B50EE /* RESideMenu.m in Sources */,
 				3E42B7F91481F23A002E4D1B /* FetchFacebookMessage.m in Sources */,
 				3E60F9D51486BD240001F5AE /* UpdateUsersFacebookIDService.m in Sources */,
 				3E60F9D8148734C10001F5AE /* SettingsSliderHeader.m in Sources */,
@@ -2311,26 +2212,12 @@
 				3E681F2C14E2E3AF00A98386 /* UIButton+WebCache.m in Sources */,
 				3E681F2E14E2E3AF00A98386 /* UIImageView+WebCache.m in Sources */,
 				3EDC037514E31E8E0099E4D0 /* Welcome1ViewController.m in Sources */,
-				3EE108D818F9C12D002B50EE /* UIViewController+RESideMenu.m in Sources */,
 				3E59AE2714E325C40055B3BA /* WelcomeViewController.m in Sources */,
 				3E59AE2B14E34F180055B3BA /* ViewHelper.m in Sources */,
 				3E59AE3414E35BAE0055B3BA /* Welcome2EnterNameViewController.m in Sources */,
-				3E59AE3E14E429090055B3BA /* Welcome3EnableFacebookViewController.m in Sources */,
-				3EA5D48F14E4429C006696C9 /* Facebook.m in Sources */,
-				3EA5D49314E4429C006696C9 /* FBDialog.m in Sources */,
-				3EA5D49514E4429C006696C9 /* FBLoginDialog.m in Sources */,
-				3EA5D49714E4429C006696C9 /* FBRequest.m in Sources */,
-				3EA5D49914E4429C006696C9 /* NSObject+SBJSON.m in Sources */,
-				3EA5D49B14E4429C006696C9 /* NSString+SBJSON.m in Sources */,
-				3EA5D49D14E4429C006696C9 /* SBJSON.m in Sources */,
-				3EA5D49F14E4429C006696C9 /* SBJsonBase.m in Sources */,
-				3EA5D4A114E4429C006696C9 /* SBJsonParser.m in Sources */,
-				3EA5D4A314E4429C006696C9 /* SBJsonWriter.m in Sources */,
 				3EAAA93019B8E7730097DB5D /* MessageReadService.m in Sources */,
-				3EA5D4AA14E44FEB006696C9 /* SendMessageWizardViewController.m in Sources */,
 				3EA5D4B414E46E42006696C9 /* HelpScreenViewController.m in Sources */,
 				3EA9F86B14E4B162005699FE /* PleaseReviewController.m in Sources */,
-				3E928A5114E8B2DA0046B689 /* RedirectingToFacebookViewController.m in Sources */,
 				3E06C94614FB13EB00953CB4 /* SendErrorService.m in Sources */,
 				3E43FA0B1532534600EFAEFD /* ShowFacebookBtnCell.m in Sources */,
 				3EC7F17615659C960019A7B4 /* ShowStatusBarCell.m in Sources */,
@@ -2340,13 +2227,11 @@
 				3E12DE5F156AB48E0008A717 /* ChangeVoiceQuestionViewController.m in Sources */,
 				3ECF8849156B05DE0012861F /* SubscribeQuestionViewController.m in Sources */,
 				3E42FA0C1576B2E6007BEBBA /* WUndergroundReport.m in Sources */,
-				3EC4E8CD158026D600F91ECF /* MessageViewViewController.m in Sources */,
 				3E3BCB391582ED1A005E0062 /* UIWebView+Clean.m in Sources */,
 				3E395E0715890B860049D6A8 /* CADebugMacros.cpp in Sources */,
 				3E395E0915890B860049D6A8 /* CAStreamBasicDescription.cpp in Sources */,
 				3E395E0B15890B860049D6A8 /* CAXException.cpp in Sources */,
 				3E89465C1597E3DB004C0868 /* AQPlayer.mm in Sources */,
-				3EE108DE18F9C26A002B50EE /* RootViewController.m in Sources */,
 				3E89465E1597E3DB004C0868 /* AQRecorder.mm in Sources */,
 				3E194DE81598EA0400A24652 /* AQLevelMeter.mm in Sources */,
 				3E194DEA1598EA0400A24652 /* GLLevelMeter.m in Sources */,
@@ -2387,7 +2272,7 @@
 				3ED3821E14913386001559BB /* SnoozeTableViewController.m in Sources */,
 				3ED3821F14913386001559BB /* UserModel.m in Sources */,
 				3ED3822014913386001559BB /* TemperatureUnitTableViewController.m in Sources */,
-				3EE108DF18F9C26A002B50EE /* RootViewController.m in Sources */,
+				3E7ECB1B1EB52DD600521E2A /* AmazonPoly.m in Sources */,
 				3ED3822214913386001559BB /* MKLocalNotificationsScheduler.m in Sources */,
 				3ED3822314913386001559BB /* SnoozeLengthCell.m in Sources */,
 				3ED3822414913386001559BB /* TemperatureScaleCustomCell.m in Sources */,
@@ -2398,16 +2283,12 @@
 				3ED3822914913386001559BB /* Theme.m in Sources */,
 				3ED3822A14913386001559BB /* RootViewController_Old.m in Sources */,
 				3ED3822B14913386001559BB /* DaysCustomCell.m in Sources */,
-				3ED3822C14913386001559BB /* iSpeechService.m in Sources */,
 				3ED3822D14913386001559BB /* VoiceSettingsViewController.m in Sources */,
 				3ED3822E14913386001559BB /* ImagePickerViewController.m in Sources */,
-				3ED3823A14913386001559BB /* FacebookModel.m in Sources */,
 				3ED3823B14913386001559BB /* GeneratingSpeechViewController.m in Sources */,
-				3ED3823C14913386001559BB /* SelectFriendsForMessageViewController.m in Sources */,
 				3ED3823D14913386001559BB /* FacebookUser.m in Sources */,
 				3ED3823E14913386001559BB /* FriendsListCell.m in Sources */,
 				3ED3823F14913386001559BB /* MessagingModel.m in Sources */,
-				3ED3824014913386001559BB /* ComposeMessageViewController.m in Sources */,
 				3EAAA93619B8FCF00097DB5D /* WeatherUndergroundService.m in Sources */,
 				3ED3824114913386001559BB /* MessageVO.m in Sources */,
 				3EAAA92D19B8E7640097DB5D /* AddMessageService.m in Sources */,
@@ -2448,21 +2329,8 @@
 				3E59AE2814E325C40055B3BA /* WelcomeViewController.m in Sources */,
 				3E59AE2C14E34F180055B3BA /* ViewHelper.m in Sources */,
 				3E59AE3514E35BAE0055B3BA /* Welcome2EnterNameViewController.m in Sources */,
-				3E59AE3F14E429090055B3BA /* Welcome3EnableFacebookViewController.m in Sources */,
-				3EA5D49014E4429C006696C9 /* Facebook.m in Sources */,
-				3EA5D49414E4429C006696C9 /* FBDialog.m in Sources */,
-				3EA5D49614E4429C006696C9 /* FBLoginDialog.m in Sources */,
-				3EA5D49814E4429C006696C9 /* FBRequest.m in Sources */,
-				3EA5D49A14E4429C006696C9 /* NSObject+SBJSON.m in Sources */,
-				3EA5D49C14E4429C006696C9 /* NSString+SBJSON.m in Sources */,
-				3EA5D49E14E4429C006696C9 /* SBJSON.m in Sources */,
-				3EA5D4A014E4429C006696C9 /* SBJsonBase.m in Sources */,
-				3EA5D4A214E4429C006696C9 /* SBJsonParser.m in Sources */,
-				3EA5D4A414E4429C006696C9 /* SBJsonWriter.m in Sources */,
-				3EA5D4AB14E44FEB006696C9 /* SendMessageWizardViewController.m in Sources */,
 				3EA5D4B514E46E42006696C9 /* HelpScreenViewController.m in Sources */,
 				3EA9F86C14E4B162005699FE /* PleaseReviewController.m in Sources */,
-				3E928A5214E8B2DA0046B689 /* RedirectingToFacebookViewController.m in Sources */,
 				3E06C94714FB13EB00953CB4 /* SendErrorService.m in Sources */,
 				3E43FA0C1532534600EFAEFD /* ShowFacebookBtnCell.m in Sources */,
 				3EC7F17715659C960019A7B4 /* ShowStatusBarCell.m in Sources */,
@@ -2471,7 +2339,6 @@
 				3E12DE60156AB48E0008A717 /* ChangeVoiceQuestionViewController.m in Sources */,
 				3ECF884A156B05DE0012861F /* SubscribeQuestionViewController.m in Sources */,
 				3E42FA0D1576B2E6007BEBBA /* WUndergroundReport.m in Sources */,
-				3EC4E8CE158026D600F91ECF /* MessageViewViewController.m in Sources */,
 				3E3BCB3A1582ED1A005E0062 /* UIWebView+Clean.m in Sources */,
 				3E395E0815890B860049D6A8 /* CADebugMacros.cpp in Sources */,
 				3E395E0A15890B860049D6A8 /* CAStreamBasicDescription.cpp in Sources */,
@@ -2490,12 +2357,20 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2258832979C6FC2C49A3B4A6 /* Pods-SpeakAlarm.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Davies (P2H4KKV2V3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = THQVB4FLJ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2508,29 +2383,40 @@
 					"../facebook-three20-527051a/Build/Products/three20",
 				);
 				INFOPLIST_FILE = "SpeakAlarm-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/Flurry",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BedBuzz;
-				PROVISIONING_PROFILE = "18c0ad4f-9196-4704-9b9f-cb29a51c1ed1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18c0ad4f-9196-4704-9b9f-cb29a51c1ed1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/SpeakAlarm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8E4D945237440E04E3AD4C /* Pods-SpeakAlarm.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = THQVB4FLJ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpeakAlarm_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
@@ -2541,18 +2427,20 @@
 					"../facebook-three20-527051a/Build/Products/three20",
 				);
 				INFOPLIST_FILE = "SpeakAlarm-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/Flurry",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BedBuzz;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/SpeakAlarm-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Release;
 		};
@@ -2560,6 +2448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Davies (P2H4KKV2V3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -2570,6 +2459,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "SpeakAlarm copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -2583,6 +2473,9 @@
 				PROVISIONING_PROFILE = "B67474BF-984B-44F1-B08F-A361729481A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/SpeakAlarm-iPad-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -2591,6 +2484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Comantis LLC";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Comantis LLC";
 				COPY_PHASE_STRIP = YES;
@@ -2599,6 +2493,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "SpeakAlarm copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -2609,6 +2504,8 @@
 					"/Users/markdavies/Documents/iphone\\ apps/AngryAlarm/Flurry",
 				);
 				PRODUCT_NAME = BedBuzz;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/SpeakAlarm-iPad-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};

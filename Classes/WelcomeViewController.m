@@ -14,14 +14,11 @@
 #import "Welcome2EnterNameViewController.h"
 #import "SpeakAlarmAppDelegate.h"
 #import "LoginService.h"
-#import "FacebookModel.h"
 #import "PrivacyPolicyViewController.h"
 
 @implementation WelcomeViewController
 @synthesize welcome1;
 @synthesize welcome2;
-@synthesize welcome3;
-@synthesize redirectScreen;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -106,7 +103,6 @@
     UserModel *userModel = [UserModel userModel];
     SpeakAlarmAppDelegate *appDelegate = (SpeakAlarmAppDelegate *)[[UIApplication sharedApplication] delegate];
     LoginService *loginService;
-    FacebookModel *fbModel = [FacebookModel sharedManager];
     
     switch (screen) {
         case welcome2EnterNameScreen:
@@ -119,35 +115,13 @@
             [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
             break;
         
-        case welcome3EnableFacebookScreen:
-            welcome3 = [[Welcome3EnableFacebookViewController alloc] initWithNibName:@"Welcome3EnableFacebook" bundle:nil AndReturnTo:self];
-            currentWizardView =  welcome3.view;
-            
-            welcome3.view = [vh formatTheViewForWizard:welcome3.view];
-            
-            [self.view addSubview:welcome3.view];
-            [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-
-            break;
-         case redirectingToFacebook:
-            self.redirectScreen = [[RedirectingToFacebookViewController alloc] initWithNibName:@"RedirectingTofacebook" bundle:nil AndReturnTo:self];
-            currentWizardView =  redirectScreen.view;
-            
-            redirectScreen.view = [vh formatTheViewForWizard:redirectScreen.view];
-            
-            [self.view addSubview:redirectScreen.view];
-            [vh moveToStartPosition:currentWizardView ForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-            
-            break;
 
             
         case mainClockScreen:
             
-            if (!fbModel.isFetchingID)
-            {
                 loginService = [[LoginService alloc] init];
                 [loginService logOnUserWithBedBuzzID:userModel.userSettings.bedBuzzID andFBID:userModel.userSettings.fbID  AndReturnTo:nil];
-            }
+            
            
             
             appDelegate.clockViewController = [[ClockViewController alloc] initWithNibName:@"Clock" bundle:nil];

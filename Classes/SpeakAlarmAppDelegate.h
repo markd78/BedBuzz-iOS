@@ -11,13 +11,10 @@
 #import "AlarmListenDelegate.h"
 #import "RootViewController_Old.h"
 #import "LoginServiceDelegate.h"
-#import "FacebookLoggedInDelegate.h"
-#import "FacebookGotFriendsDelegate.h"
 #import "WeatherUpdatedDelegate.h"
 #import "WelcomeViewController.h"
 
-@interface SpeakAlarmAppDelegate : NSObject <UIApplicationDelegate, LoginServiceDelegate, 
-                    FacebookLoggedInDelegate, WeatherUpdatedDelegate, UIAlertViewDelegate> {
+@interface SpeakAlarmAppDelegate : NSObject <UIApplicationDelegate, LoginServiceDelegate, WeatherUpdatedDelegate, UIAlertViewDelegate> {
     UIWindow *window;
     UITabBarController *tabBarController;
     ClockViewController *clockViewController;

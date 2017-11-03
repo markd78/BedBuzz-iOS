@@ -8,7 +8,7 @@
 
 #import "VoiceSettingsViewController.h"
 #import "UserModel.h"
-#import "iSpeechService.h"
+#import "AmazonPoly.h"
 #import "SoundDirector.h"
 #import "iToast.h"
 #import "BuyViewController.h"
@@ -363,21 +363,21 @@
 
 	
 	// generate the sounds	
-	iSpeechService *iSpeechService1 = [[iSpeechService alloc] init];
-	[iSpeechService1 startGenerateSpeech:morningString AndSaveToFileName:morningFileName withVoice:currentVoiceName AndReturnTo:self];
+	AmazonPoly *AmazonPoly1 = [[AmazonPoly alloc] init];
+	[AmazonPoly1 startGenerateSpeech:morningString AndSaveToFileName:morningFileName withVoice:currentVoiceName AndReturnTo:self];
 	//[neoSpeechService autorelease];
 	
-	iSpeechService *iSpeechService2 = [[iSpeechService alloc] init];
-	[iSpeechService2 startGenerateSpeech:afternoonString AndSaveToFileName:afternoonFileName withVoice:currentVoiceName  AndReturnTo:self];
+	AmazonPoly *AmazonPoly2 = [[AmazonPoly alloc] init];
+	[AmazonPoly2 startGenerateSpeech:afternoonString AndSaveToFileName:afternoonFileName withVoice:currentVoiceName  AndReturnTo:self];
 	//[neoSpeechService2 autorelease];
 	
-	iSpeechService *iSpeechService3  = [[iSpeechService alloc] init];
-	[iSpeechService3 startGenerateSpeech:eveningString AndSaveToFileName:eveningFileName withVoice:currentVoiceName  AndReturnTo:self];
+	AmazonPoly *AmazonPoly3  = [[AmazonPoly alloc] init];
+	[AmazonPoly3 startGenerateSpeech:eveningString AndSaveToFileName:eveningFileName withVoice:currentVoiceName  AndReturnTo:self];
 	
 	if ([messageTxt.text length] != 0 )
 	{
-				iSpeechService *iSpeechService4  = [[iSpeechService alloc] init];
-				[iSpeechService4 startGenerateSpeech:messageTxt.text AndSaveToFileName:addtionalMessageFileName withVoice:currentVoiceName  AndReturnTo:self];
+				AmazonPoly *AmazonPoly4  = [[AmazonPoly alloc] init];
+				[AmazonPoly4 startGenerateSpeech:messageTxt.text AndSaveToFileName:addtionalMessageFileName withVoice:currentVoiceName  AndReturnTo:self];
 	}
 	else {
 				[self speechGenerated];

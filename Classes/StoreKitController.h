@@ -21,7 +21,7 @@
 @property (strong, nonatomic) id <StoreKitControllerDelegate> storeKitControllerDelegate;
 @property (strong, nonatomic) SKPaymentTransaction *transactionBeingProcessed;
 
--(void)makePurchaseForProductID:(NSString *)productID AndReturnTo:(id <StoreKitControllerDelegate>)delegateClass;
+-(void)makePurchaseForProductID:(SKProduct *)product AndReturnTo:(id <StoreKitControllerDelegate>)delegateClass;
 -(void)completedPurchaseTransaction:(SKPaymentTransaction *)transaction  ;
 - (NSString *)encode:(const uint8_t *)input length:(NSInteger)length;
 -(void)paymentVerifiedForTransaction:(SKPaymentTransaction *)transaction;

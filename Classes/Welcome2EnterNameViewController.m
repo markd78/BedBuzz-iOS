@@ -7,7 +7,7 @@
 //
 
 #import "Welcome2EnterNameViewController.h"
-#import "iSpeechService.h"
+#import "AmazonPoly.h"
 #import "SoundDirector.h"
 #import "UserModel.h"
 #import "SpeakAlarmAppDelegate.h"
@@ -113,16 +113,16 @@
         
         
 	// generate the sounds	
-	iSpeechService *iSpeechService1 = [[iSpeechService alloc] init];
-	[iSpeechService1 startGenerateSpeech:self.morningString AndSaveToFileName:@"goodMorning.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
+	AmazonPoly *AmazonPoly1 = [[AmazonPoly alloc] init];
+	[AmazonPoly1 startGenerateSpeech:self.morningString AndSaveToFileName:@"goodMorning.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
 	//[neoSpeechService autorelease];
 	
-	iSpeechService *iSpeechService2 = [[iSpeechService alloc] init];
-	[iSpeechService2 startGenerateSpeech:self.afternoonString AndSaveToFileName:@"goodAfternoon.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
+	AmazonPoly *AmazonPoly2 = [[AmazonPoly alloc] init];
+	[AmazonPoly2 startGenerateSpeech:self.afternoonString AndSaveToFileName:@"goodAfternoon.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
 	//[neoSpeechService2 autorelease];
 	
-	iSpeechService *iSpeechService3  = [[iSpeechService alloc] init];
-	[iSpeechService3 startGenerateSpeech:self.eveningString AndSaveToFileName:@"goodEvening.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
+	AmazonPoly *AmazonPoly3  = [[AmazonPoly alloc] init];
+	[AmazonPoly3 startGenerateSpeech:self.eveningString AndSaveToFileName:@"goodEvening.mp3"  withVoice:@"ukenglishfemale1" AndReturnTo:self];
 	//[neoSpeechService3 autorelease];
 	
 	
@@ -215,8 +215,14 @@
 {
      [self.view removeFromSuperview];
     
-    // tell delegate we're done
-    [wizardDelegate showNextScreen:welcome3EnableFacebookScreen FromCurrentScreen:welcome2EnterNameScreen];
+    
+    SoundDirector *sd = [SoundDirector soundDirector];
+    [sd stopSounds];
+    
+    // dismiss the wizard
+    ViewHelper *vh = [ViewHelper sharedManager];
+    
+    [vh moveToEndPosition:vh.currentView ForOrientation:[UIApplication sharedApplication].statusBarOrientation AndReturnTo:self];
 }
 
 

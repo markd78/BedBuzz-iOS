@@ -9,7 +9,6 @@
 #import "FetchMessagesService.h"
 #import "Utilities.h"
 #import "MessageVO.h"
-#import "JSON.h"
 #import "MessagingModel.h"
 #import "FetchMessagesDelegate.h"
 #import "NSData+base64Decode.h"

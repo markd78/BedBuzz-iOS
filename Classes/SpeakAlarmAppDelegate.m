@@ -15,13 +15,13 @@
 #import "AlarmGoingOffViewController.h"
 #import "UserModel.h"
 #import "RootViewController_Old.h"
-#import "FacebookModel.h"
 #import "RSSModel.h"
 #import "LoginService.h"
 #import "StoreKitModel.h"
 #import "Flurry.h"
 #import "WelcomeViewController.h"
 #import "SendErrorService.h"
+#import <AWSCore/AWSCore.h>
 
 @implementation SpeakAlarmAppDelegate
 
@@ -172,37 +172,8 @@
     
 }
 
-// Pre 4.2 support
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    FacebookModel *fbModel = [FacebookModel sharedManager];
-    return [fbModel.facebook handleOpenURL:url]; 
-}
 
-// For 4.2+ support
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-     FacebookModel *fbModel = [FacebookModel sharedManager];
-    fbModel.isFetchingID = YES;
-    isFromReturnFromFacebookApp = YES;
-    
-    UserModel *userModel = [UserModel userModel];
-    [userModel loadUserSettings];
-    
-    return [fbModel.facebook handleOpenURL:url]; 
-}
 
--(void)showSendFirstMessageDialog
-{
-    UserModel *userModel = [UserModel userModel];
-    
-    // only show the dialog if the user has seen the help screen (else the user will see the message when they close the help screen)
-    if (isFromReturnFromFacebookApp &&!isFromNotification && userModel.userSettings.haveShownHelpScreen && userModel.userSettings.fbID != nil  && [userModel.userSettings.fbID intValue]!=-1  && !userModel.userSettings.heardComposeMessageHelp)
-    {
-        isFromReturnFromFacebookApp = NO;
-        [clockViewController showSendMessageQuestion];
-    }
-
-}
 
 void uncaughtExceptionHandler(NSException *exception) {
     
@@ -219,6 +190,14 @@ void uncaughtExceptionHandler(NSException *exception) {
     [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self applicationDidFinishLaunching:application];
+    
+    return YES;
+}
+
+
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
     
@@ -226,6 +205,15 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self setUp:NO];
     isAppearingFromBackground = NO;
     isFromNotification = NO;
+    
+    
+    AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSWest2 identityPoolId: @"us-west-2:c6eb41ca-b58b-43a6-b0e3-86933bf5c497"];
+    
+    AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSWest2 credentialsProvider:credentialsProvider];
+
+    
+    [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
+    
     
    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
@@ -259,22 +247,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 			LoginService *loginService = [[LoginService alloc] init];
 			[loginService logOnUserWithBedBuzzID:userModel.userSettings.bedBuzzID andFBID:userModel.userSettings.fbID  AndReturnTo:self];
 			
-			// and login to the Facebook, if user has a fbID
-			if ([userModel.userSettings.fbID longValue] > 0 ) {
-				FacebookModel *fbModel = [FacebookModel sharedManager];
-				[fbModel fbLoginAndReturnTo:self];
-			
-
-		}
 		
 		
 	}
-    
-    if (!isFromReturnFromFacebookApp && !isFromNotification)
-    {
-        
-        [self showSendFirstMessageDialog];
-    }
     
 	// set the app version
 	userModel.userSettings.appVersion = [NSNumber numberWithDouble:2.01];
@@ -424,11 +399,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     LoginService *loginService = [[LoginService alloc] init];
     [loginService logOnUserWithBedBuzzID:userModel.userSettings.bedBuzzID andFBID:userModel.userSettings.fbID  AndReturnTo:self];
     
-    // and login to the Facebook, if user has a fbID
-    if ([userModel.userSettings.fbID longValue] > 0 ) {
-        FacebookModel *fbModel = [FacebookModel sharedManager];
-        [fbModel fbLoginAndReturnTo:self];
-    }
     }
     
     if (isFromReturnFromFacebookApp)
@@ -443,16 +413,12 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 -(void)applicationDidBecomeActive:(UIApplication *)application
 {
+    
     NSLog(@"applicationDidBecomeActive");
     
    // [self checkForExpiredAndExpiringSubscription];
     UserModel *userModel = [UserModel userModel];
 
-     if ([userModel.userSettings.fbID longValue] > 0 ) {
-         FacebookModel *fbModel = [FacebookModel sharedManager];
-         [fbModel.facebook extendAccessTokenIfNeeded];
-     }
-    
     
     WeatherModel *wm = [WeatherModel weatherModel];
     if (wm.weatherConditions!=nil && wm.weatherConditions.count > 0)
